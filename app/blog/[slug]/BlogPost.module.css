@@ -1,0 +1,123 @@
+.articlePage {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.articleHeader {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem 4rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.categoryTag {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-xlight);
+  background: rgba(107,31,162,0.2);
+  padding: 6px 16px;
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 900;
+  color: #fff;
+  font-family: var(--font-display);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.separator {
+  color: var(--border-light);
+}
+
+/* Markdown Content Wrapper Styles */
+.articleContent {
+  max-width: 720px;
+  margin: 4rem auto 0;
+  padding: 0 1rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.articleContent h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  font-family: var(--font-display);
+  margin: 3rem 0 1.5rem;
+}
+
+.articleContent h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-display);
+  margin: 2rem 0 1rem;
+}
+
+.articleContent p {
+  margin-bottom: 1.5rem;
+}
+
+.articleContent strong {
+  color: #fff;
+}
+
+.articleContent ul, 
+.articleContent ol {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.articleContent li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+.articleContent li::marker {
+  color: var(--brand-xlight);
+}
+
+.articleContent a {
+  color: var(--brand-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.articleContent a:hover {
+  text-decoration: underline;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: #fff;
+}

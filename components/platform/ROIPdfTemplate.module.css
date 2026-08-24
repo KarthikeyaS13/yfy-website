@@ -1,0 +1,320 @@
+.pdfContainer {
+  width: 794px; /* A4 width essentially at 96 DPI */
+  background: white;
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  margin: 2rem auto;
+  overflow: hidden;
+  position: relative;
+  /* Make sure it scales down if viewed on a smaller screen temporarily */
+  max-width: 100%;
+}
+
+.pdfPage {
+  width: 794px;
+  height: 1123px; /* A4 height at 96 DPI */
+  background: white;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  position: relative;
+  page-break-after: always;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid #a855f7;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.titleBlock h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.titleBlock p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 14px;
+}
+
+.dateText {
+  font-size: 10px;
+  font-weight: 700;
+  color: #9ca3af;
+  text-transform: uppercase;
+}
+
+/* Page 1 Specifics */
+.highlightCards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.highlightCard {
+  flex: 1;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  border-top: 4px solid #a855f7;
+}
+
+.highlightCardTitle {
+  font-size: 10px;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.highlightCardValue {
+  font-size: 26px;
+  font-weight: 800;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.highlightCardValue span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.chartsWrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.chartColumn {
+  flex: 1;
+}
+
+.sectionHeading {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* CSS Bar Chart Simulation */
+.barChart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 200px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.yAxis {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #9ca3af;
+  padding-bottom: 10px;
+}
+
+.yAxisLine {
+  position: absolute;
+  left: 45px;
+  right: 0;
+  border-top: 1px dashed #e5e7eb;
+}
+
+.barWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+  width: 80px;
+  margin-left: 40px;
+  height: 100%;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+}
+
+.bar.gray {
+  background-color: #cbd5e1;
+}
+
+.bar.purple {
+  background-color: #7e22ce;
+}
+
+.barLabel {
+  font-size: 11px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* CSS Donut Chart (Swapped mapping logic to pure SVG to evade html2canvas engine rendering failure for gradients) */
+.donutChart {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donutHole {
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+}
+
+.donutLegend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: #4b5563;
+}
+
+.legendColor {
+  width: 10px;
+  height: 10px;
+}
+
+/* Efficiency Grid */
+.efficiencyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.effCard {
+  border: 1px solid #e5e7eb;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.effTitle {
+  font-size: 8px;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.effValue {
+  font-size: 18px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.purpleBanner {
+  background: #7e22ce;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.purpleBanner span {
+  font-weight: 800;
+}
+
+/* Page 2 Details Table */
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dataTable th, .dataTable td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 12px;
+}
+
+.dataTable th {
+  background: #f8fafc;
+  color: #6b7280;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dataTable td.value {
+  text-align: right;
+  font-weight: 700;
+  color: #111827;
+}
+
+.dataTable td.valDanger {
+  color: #dc2626;
+  text-align: right;
+  font-weight: 700;
+}
+
+.footer {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 15px;
+}
+
+.footerDisclaimer {
+  font-size: 9px;
+  color: #9ca3af;
+  font-style: italic;
+  max-width: 80%;
+  line-height: 1.4;
+}
+
+.footerPage {
+  font-size: 10px;
+  font-weight: 700;
+  color: #6b7280;
+}

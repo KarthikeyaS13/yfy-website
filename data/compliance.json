@@ -1,0 +1,50 @@
+[
+  {
+    "id": "c_pf_15",
+    "title": "PF Returns Filing & Payment",
+    "type": "PF",
+    "state": "All India",
+    "dueDateDay": 15,
+    "description": "Provide Electronic Challan cum Return (ECR) for Provident Fund."
+  },
+  {
+    "id": "c_esi_15",
+    "title": "ESI Returns Filing & Payment",
+    "type": "ESI",
+    "state": "All India",
+    "dueDateDay": 15,
+    "description": "File ESI contributions for the previous month."
+  },
+  {
+    "id": "c_tds_7",
+    "title": "TDS Payment on Salary",
+    "type": "TDS",
+    "state": "All India",
+    "dueDateDay": 7,
+    "description": "Deposit Tax Deducted at Source (TDS) for the previous month."
+  },
+  {
+    "id": "c_pt_karnataka_20",
+    "title": "Professional Tax (PT) Payment - Karnataka",
+    "type": "PT",
+    "state": "Karnataka",
+    "dueDateDay": 20,
+    "description": "Deposit PT for the previous month in Karnataka."
+  },
+  {
+    "id": "c_pt_maharashtra_last",
+    "title": "Professional Tax (PT) Payment - Maharashtra",
+    "type": "PT",
+    "state": "Maharashtra",
+    "dueDateDay": 28,
+    "description": "Deposit PT for the previous month in Maharashtra."
+  },
+  {
+    "title": "LWF for Delhi",
+    "type": "PF",
+    "state": "Delhi",
+    "dueDateDay": 10,
+    "description": "Labor Welfare Fund payment for Delhi.",
+    "id": "c_1775506696734"
+  }
+]

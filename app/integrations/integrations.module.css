@@ -1,0 +1,140 @@
+.platformContainer {
+  padding: 160px 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.heroBadge {
+  display: inline-block;
+  background: rgba(155, 61, 216, 0.15);
+  border: 1px solid rgba(155, 61, 216, 0.4);
+  color: var(--brand-xlight);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: var(--gradient-silver);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.heroDesc {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.heroCtas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--bg-surface-2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(155, 61, 216, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(155, 61, 216, 0.1);
+}
+
+.iconBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(155, 61, 216, 0.1);
+  color: var(--brand-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 1px solid rgba(155, 61, 216, 0.2);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.stageFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stageFeatures li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--brand-xlight);
+  font-size: 0.9rem;
+}
+
+.stageFeatures li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--brand-primary);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .platformContainer {
+    padding: 100px 16px 40px;
+    gap: 40px;
+  }
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  .heroDesc {
+    font-size: 1rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
