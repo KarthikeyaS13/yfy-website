@@ -360,3 +360,226 @@
   }
 }
 
+
+/* Scheduler Styles */
+.scheduleSection {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.scheduleHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.scheduleDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffb703; /* Amber/Yellow to match finnovo.io dot */
+}
+
+.scheduleTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.calendarGridWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media(min-width: 600px) {
+  .calendarGridWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.calendarWidget {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendarMonthHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calNavBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.2s;
+}
+
+.calNavBtn:hover {
+  color: #fff;
+}
+
+.calMonthText {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+}
+
+.calendarDayHeader {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.calendarCell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+
+.calendarCell:not(.empty):not(.past):hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.calendarCell.past {
+  color: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+}
+
+.calendarCell.empty {
+  cursor: default;
+}
+
+.calendarCell.today {
+  font-weight: 700;
+  color: var(--brand-light);
+}
+
+.calendarCell.selected {
+  background: #ffb703; /* Amber color for selection */
+  color: #000;
+  font-weight: 700;
+}
+
+.timeSlotsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeSlotsTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.timeSlotsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.timeSlotBtn {
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.timeSlotBtn:hover:not(.unavailable) {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.timeSlotBtn.selected {
+  background: #ffb703;
+  color: #000;
+  border-color: #ffb703;
+  font-weight: 600;
+}
+
+.timeSlotBtn.unavailable {
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+
+.selectedSlotDisplay {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.selectedSlotDisplay strong {
+  color: #fff;
+}
+
+.slotHint {
+  color: var(--text-muted);
+}
+
+/* Toast Styles */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  z-index: 9999;
+  animation: slideUp 0.3s ease-out forwards;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.success {
+  background-color: #10b981; /* Emerald 500 */
+}
+
+.error {
+  background-color: #ef4444; /* Red 500 */
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

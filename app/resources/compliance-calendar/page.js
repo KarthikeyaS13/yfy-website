@@ -35,12 +35,25 @@ export default function ComplianceCalendar() {
     setCurrentDate(new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1));
   };
 
-  const handleSubscribeSubmit = (e) => {
+  const handleSubscribeSubmit = async (e) => {
     e.preventDefault();
-    console.log("Subscription requested:", formData);
-    alert("Thank you! You have been successfully subscribed to yfy® monthly compliance alerts.");
-    setIsSubscribeModalOpen(false);
-    setFormData({ name: '', email: '', company: '', headcount: '', state: '' });
+    try {
+      const res = await fetch('/api/compliance/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+      if (res.ok) {
+        alert("Thank you! You have been successfully subscribed to yfy® monthly compliance alerts.");
+        setIsSubscribeModalOpen(false);
+        setFormData({ name: '', email: '', company: '', headcount: '', state: '' });
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      console.error("Subscription error:", err);
+      alert("Failed to subscribe. Please check your connection and try again.");
+    }
   };
 
   // Calendar logic

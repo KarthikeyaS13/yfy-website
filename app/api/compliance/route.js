@@ -1,17 +1,25 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs/promises';
-import path from 'path';
-
-const DATA_FILE = path.join(process.cwd(), 'data', 'compliance.json');
+import db from '../../../lib/db';
 
 export async function GET() {
   try {
-    const fileContents = await fs.readFile(DATA_FILE, 'utf8');
-    const data = JSON.parse(fileContents);
-    return NextResponse.json(data);
+    const stmt = db.prepare('SELECT * FROM compliance_events');
+    const events = stmt.all();
+    
+    // SQLite returns column names exactly as they are in DB (due_date_day).
+    // The frontend expects `dueDateDay`. Let's map it.
+    const mappedEvents = events.map(evt => ({
+      id: evt.id,
+      title: evt.title,
+      type: evt.type,
+      state: evt.state,
+      dueDateDay: evt.due_date_day,
+      description: evt.description
+    }));
+
+    return NextResponse.json(mappedEvents);
   } catch (error) {
-    console.error("Failed to read compliance.json", error);
-    // Return empty array if file fails to load or parse
+    console.error("Failed to read from compliance_events", error);
     return NextResponse.json([], { status: 500 });
   }
 }
@@ -25,17 +33,33 @@ export async function POST(request) {
 
     const payload = await request.json();
     
-    // Quick validation
     if (!Array.isArray(payload)) {
       return NextResponse.json({ error: 'Payload must be an array of compliance dates.' }, { status: 400 });
     }
 
-    // Write the new data
-    await fs.writeFile(DATA_FILE, JSON.stringify(payload, null, 2), 'utf8');
+    const insert = db.prepare(`
+      INSERT INTO compliance_events (id, title, type, state, due_date_day, description)
+      VALUES (@id, @title, @type, @state, @dueDateDay, @description)
+      ON CONFLICT(id) DO UPDATE SET
+        title = excluded.title,
+        type = excluded.type,
+        state = excluded.state,
+        due_date_day = excluded.due_date_day,
+        description = excluded.description
+    `);
+
+    // In a real scenario we might want to clear old ones, but for now we upsert.
+    const insertMany = db.transaction((eventsArray) => {
+      for (const event of eventsArray) {
+        insert.run(event);
+      }
+    });
+
+    insertMany(payload);
 
     return NextResponse.json({ success: true, message: 'Compliance data updated successfully.' });
   } catch (error) {
-    console.error("Failed to write compliance.json", error);
+    console.error("Failed to write to compliance_events", error);
     return NextResponse.json({ error: 'Failed to update compliance data.' }, { status: 500 });
   }
 }

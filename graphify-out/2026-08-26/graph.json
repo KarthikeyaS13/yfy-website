@@ -13,7 +13,7 @@
       "file_type": "code",
       "norm_label": "homepage()",
       "source_file": "app/page.js",
-      "source_location": "L21"
+      "source_location": "L20"
     },
     {
       "id": "components_home_featuressnapshot_featuressnapshot",
@@ -74,18 +74,6 @@
       "norm_label": "isocerts()",
       "source_file": "components/home/IsoCerts.js",
       "source_location": "L10"
-    },
-    {
-      "id": "components_home_pricingcards_pricingcards",
-      "label": "PricingCards()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "app/page.js",
-      "file_type": "code",
-      "norm_label": "pricingcards()",
-      "source_file": "components/home/PricingCards.js",
-      "source_location": "L59"
     },
     {
       "id": "components_home_roiteaser_roiteaser",
@@ -496,102 +484,6 @@
       "source_location": "L1"
     },
     {
-      "id": "app_case_studies_page_casestudiespage",
-      "label": "CaseStudiesPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "case-studies/[slug]/page.js",
-      "file_type": "code",
-      "norm_label": "casestudiespage()",
-      "source_file": "app/case-studies/page.js",
-      "source_location": "L11"
-    },
-    {
-      "id": "app_case_studies_slug_page_casestudydetail",
-      "label": "CaseStudyDetail()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "case-studies/[slug]/page.js",
-      "file_type": "code",
-      "norm_label": "casestudydetail()",
-      "source_file": "app/case-studies/[slug]/page.js",
-      "source_location": "L24"
-    },
-    {
-      "id": "app_case_studies_slug_page_generatemetadata",
-      "label": "generateMetadata()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "case-studies/[slug]/page.js",
-      "file_type": "code",
-      "norm_label": "generatemetadata()",
-      "source_file": "app/case-studies/[slug]/page.js",
-      "source_location": "L13"
-    },
-    {
-      "id": "app_case_studies_slug_page_generatestaticparams",
-      "label": "generateStaticParams()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "case-studies/[slug]/page.js",
-      "file_type": "code",
-      "norm_label": "generatestaticparams()",
-      "source_file": "app/case-studies/[slug]/page.js",
-      "source_location": "L7"
-    },
-    {
-      "id": "app_community_page_communitypage",
-      "label": "CommunityPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 38,
-      "community_name": "community/page.js",
-      "file_type": "code",
-      "norm_label": "communitypage()",
-      "source_file": "app/community/page.js",
-      "source_location": "L44"
-    },
-    {
-      "id": "app_about_page_aboutpage",
-      "label": "AboutPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "about/page.js",
-      "file_type": "code",
-      "norm_label": "aboutpage()",
-      "source_file": "app/about/page.js",
-      "source_location": "L10"
-    },
-    {
-      "id": "app_security_page_securitypoliciespage",
-      "label": "SecurityPoliciesPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "security/page.js",
-      "file_type": "code",
-      "norm_label": "securitypoliciespage()",
-      "source_file": "app/security/page.js",
-      "source_location": "L9"
-    },
-    {
-      "id": "app_terms_page_termsofservicepage",
-      "label": "TermsOfServicePage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "terms/page.js",
-      "file_type": "code",
-      "norm_label": "termsofservicepage()",
-      "source_file": "app/terms/page.js",
-      "source_location": "L9"
-    },
-    {
       "id": "app_blog_page_blogpage",
       "label": "BlogPage()",
       "_callable": true,
@@ -923,7 +815,7 @@
       "file_type": "code",
       "norm_label": "metadata",
       "source_file": "app/page.js",
-      "source_location": "L14"
+      "source_location": "L13"
     },
     {
       "id": "components_home_featuressnapshot",
@@ -1012,28 +904,6 @@
       "norm_label": "certs",
       "source_file": "components/home/IsoCerts.js",
       "source_location": "L4"
-    },
-    {
-      "id": "components_home_pricingcards",
-      "label": "PricingCards.js",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "app/page.js",
-      "file_type": "code",
-      "norm_label": "pricingcards.js",
-      "source_file": "components/home/PricingCards.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "components_home_pricingcards_pricingtiers",
-      "label": "pricingTiers",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "app/page.js",
-      "file_type": "code",
-      "norm_label": "pricingtiers",
-      "source_file": "components/home/PricingCards.js",
-      "source_location": "L6"
     },
     {
       "id": "components_home_roiteaser",
@@ -2247,127 +2117,6 @@
       "source_file": "next"
     },
     {
-      "id": "app_case_studies_page",
-      "label": "case-studies/page.js",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "case-studies/[slug]/page.js",
-      "file_type": "code",
-      "norm_label": "case-studies/page.js",
-      "source_file": "app/case-studies/page.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_case_studies_page_metadata",
-      "label": "metadata",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "case-studies/[slug]/page.js",
-      "file_type": "code",
-      "norm_label": "metadata",
-      "source_file": "app/case-studies/page.js",
-      "source_location": "L6"
-    },
-    {
-      "id": "app_case_studies_slug_page",
-      "label": "case-studies/[slug]/page.js",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "case-studies/[slug]/page.js",
-      "file_type": "code",
-      "norm_label": "case-studies/[slug]/page.js",
-      "source_file": "app/case-studies/[slug]/page.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "data_casestudiesdata",
-      "label": "caseStudiesData.js",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "case-studies/[slug]/page.js",
-      "file_type": "code",
-      "norm_label": "casestudiesdata.js",
-      "source_file": "data/caseStudiesData.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "data_casestudiesdata_casestudiesdata",
-      "label": "caseStudiesData",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "case-studies/[slug]/page.js",
-      "file_type": "code",
-      "norm_label": "casestudiesdata",
-      "source_file": "data/caseStudiesData.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_community_page",
-      "label": "community/page.js",
-      "_origin": "ast",
-      "community": 38,
-      "community_name": "community/page.js",
-      "file_type": "code",
-      "norm_label": "community/page.js",
-      "source_file": "app/community/page.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_community_page_features",
-      "label": "features",
-      "_origin": "ast",
-      "community": 38,
-      "community_name": "community/page.js",
-      "file_type": "code",
-      "norm_label": "features",
-      "source_file": "app/community/page.js",
-      "source_location": "L10"
-    },
-    {
-      "id": "app_community_page_metadata",
-      "label": "metadata",
-      "_origin": "ast",
-      "community": 38,
-      "community_name": "community/page.js",
-      "file_type": "code",
-      "norm_label": "metadata",
-      "source_file": "app/community/page.js",
-      "source_location": "L5"
-    },
-    {
-      "id": "app_community_page_stats",
-      "label": "stats",
-      "_origin": "ast",
-      "community": 38,
-      "community_name": "community/page.js",
-      "file_type": "code",
-      "norm_label": "stats",
-      "source_file": "app/community/page.js",
-      "source_location": "L38"
-    },
-    {
-      "id": "app_about_page",
-      "label": "about/page.js",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "about/page.js",
-      "file_type": "code",
-      "norm_label": "about/page.js",
-      "source_file": "app/about/page.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_about_page_metadata",
-      "label": "metadata",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "about/page.js",
-      "file_type": "code",
-      "norm_label": "metadata",
-      "source_file": "app/about/page.js",
-      "source_location": "L5"
-    },
-    {
       "id": "package",
       "label": "package.json",
       "_origin": "ast",
@@ -2520,50 +2269,6 @@
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
       "source_location": "L25"
-    },
-    {
-      "id": "app_security_page",
-      "label": "security/page.js",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "security/page.js",
-      "file_type": "code",
-      "norm_label": "security/page.js",
-      "source_file": "app/security/page.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_security_page_metadata",
-      "label": "metadata",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "security/page.js",
-      "file_type": "code",
-      "norm_label": "metadata",
-      "source_file": "app/security/page.js",
-      "source_location": "L3"
-    },
-    {
-      "id": "app_terms_page",
-      "label": "terms/page.js",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "terms/page.js",
-      "file_type": "code",
-      "norm_label": "terms/page.js",
-      "source_file": "app/terms/page.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_terms_page_metadata",
-      "label": "metadata",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "terms/page.js",
-      "file_type": "code",
-      "norm_label": "metadata",
-      "source_file": "app/terms/page.js",
-      "source_location": "L3"
     },
     {
       "id": "app_blog_page",
@@ -3007,27 +2712,15 @@
       "weight": 1.0
     },
     {
-      "source": "app_case_studies_page",
-      "target": "data_casestudiesdata_casestudiesdata",
+      "source": "app_layout",
+      "target": "components_globalscripts_globalscripts",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "app/case-studies/page.js",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "app_case_studies_slug_page",
-      "target": "data_casestudiesdata_casestudiesdata",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/case-studies/[slug]/page.js",
-      "source_location": "L5",
+      "source_file": "app/layout.js",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -3068,7 +2761,7 @@
     },
     {
       "source": "app_page",
-      "target": "components_home_isocerts_isocerts",
+      "target": "components_home_roiteaser_roiteaser",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3087,19 +2780,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.js",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page",
-      "target": "components_home_pricingcards_pricingcards",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/page.js",
-      "source_location": "L2",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -3111,12 +2792,24 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.js",
-      "source_location": "L3",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
       "source": "app_page",
       "target": "components_home_whyyfy_whyyfy",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/page.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page",
+      "target": "components_home_featuressnapshot_featuressnapshot",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3135,12 +2828,36 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page",
+      "target": "components_home_integrationsstrip_integrationsstrip",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/page.js",
       "source_location": "L7",
       "weight": 1.0
     },
     {
       "source": "app_page",
       "target": "components_home_testimonials_testimonials",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/page.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page",
+      "target": "components_home_isocerts_isocerts",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3403,6 +3120,18 @@
       "weight": 1.0
     },
     {
+      "source": "components_platform_roicalculator",
+      "target": "components_platform_roipdftemplate_roipdftemplate",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/platform/ROICalculator.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "components_platform_roicalculatorwrapper",
       "target": "components_platform_roicalculator_roicalculator",
       "relation": "imports",
@@ -3424,6 +3153,18 @@
       "context": "import",
       "source_file": "components/products/ProductClientView.js",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "components_ui_footer",
+      "target": "app_newsletterform_newsletterform",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/ui/Footer.js",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -3595,30 +3336,6 @@
       "weight": 1.0
     },
     {
-      "source": "app_case_studies_page",
-      "target": "data_casestudiesdata",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/case-studies/page.js",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "app_case_studies_slug_page",
-      "target": "data_casestudiesdata",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/case-studies/[slug]/page.js",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
       "source": "app_layout",
       "target": "components_globalscripts",
       "relation": "imports_from",
@@ -3668,7 +3385,7 @@
     },
     {
       "source": "app_page",
-      "target": "components_home_isocerts",
+      "target": "components_home_roiteaser",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3680,7 +3397,7 @@
     },
     {
       "source": "app_page",
-      "target": "components_home_roiteaser",
+      "target": "components_home_finalcta",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3692,19 +3409,7 @@
     },
     {
       "source": "app_page",
-      "target": "components_home_finalcta",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/page.js",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page",
-      "target": "components_home_pricingcards",
+      "target": "components_home_trustbar",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3716,18 +3421,6 @@
     },
     {
       "source": "app_page",
-      "target": "components_home_trustbar",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/page.js",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page",
       "target": "components_home_whyyfy",
       "relation": "imports_from",
       "_origin": "ast",
@@ -3735,7 +3428,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.js",
-      "source_location": "L5",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -3747,7 +3440,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.js",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -3759,7 +3452,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.js",
-      "source_location": "L7",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -3771,12 +3464,24 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.js",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
       "source": "app_page",
       "target": "components_home_testimonials",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/page.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page",
+      "target": "components_home_isocerts",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4120,28 +3825,6 @@
       "weight": 1.0
     },
     {
-      "source": "app_about_page",
-      "target": "app_about_page_aboutpage",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/about/page.js",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "app_about_page",
-      "target": "app_about_page_metadata",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/about/page.js",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
       "source": "app_admin_compliance_page",
       "target": "app_admin_compliance_page_complianceadmin",
       "relation": "contains",
@@ -4252,105 +3935,6 @@
       "weight": 1.0
     },
     {
-      "source": "app_case_studies_page",
-      "target": "app_case_studies_page_casestudiespage",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/case-studies/page.js",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "app_case_studies_page",
-      "target": "app_case_studies_page_metadata",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/case-studies/page.js",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "app_case_studies_slug_page",
-      "target": "app_case_studies_slug_page_generatemetadata",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/case-studies/[slug]/page.js",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "app_case_studies_slug_page",
-      "target": "app_case_studies_slug_page_casestudydetail",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/case-studies/[slug]/page.js",
-      "source_location": "L24",
-      "weight": 1.0
-    },
-    {
-      "source": "app_case_studies_slug_page",
-      "target": "app_case_studies_slug_page_generatestaticparams",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/case-studies/[slug]/page.js",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "app_community_page",
-      "target": "app_community_page_features",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/community/page.js",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "app_community_page",
-      "target": "app_community_page_stats",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/community/page.js",
-      "source_location": "L38",
-      "weight": 1.0
-    },
-    {
-      "source": "app_community_page",
-      "target": "app_community_page_communitypage",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/community/page.js",
-      "source_location": "L44",
-      "weight": 1.0
-    },
-    {
-      "source": "app_community_page",
-      "target": "app_community_page_metadata",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/community/page.js",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
       "source": "app_integrations_page",
       "target": "app_integrations_page_integrationspage",
       "relation": "contains",
@@ -4413,7 +3997,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.js",
-      "source_location": "L14",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -4424,7 +4008,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.js",
-      "source_location": "L21",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -4637,28 +4221,6 @@
       "weight": 1.0
     },
     {
-      "source": "app_security_page",
-      "target": "app_security_page_metadata",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/security/page.js",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "app_security_page",
-      "target": "app_security_page_securitypoliciespage",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/security/page.js",
-      "source_location": "L9",
-      "weight": 1.0
-    },
-    {
       "source": "app_sitemap",
       "target": "app_sitemap_sitemap",
       "relation": "contains",
@@ -4744,28 +4306,6 @@
       "confidence_score": 1.0,
       "source_file": "app/solutions/it/page.js",
       "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "app_terms_page",
-      "target": "app_terms_page_metadata",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/terms/page.js",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "app_terms_page",
-      "target": "app_terms_page_termsofservicepage",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/terms/page.js",
-      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -4931,28 +4471,6 @@
       "confidence_score": 1.0,
       "source_file": "components/home/IsoCerts.js",
       "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "components_home_pricingcards",
-      "target": "components_home_pricingcards_pricingcards",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "components/home/PricingCards.js",
-      "source_location": "L59",
-      "weight": 1.0
-    },
-    {
-      "source": "components_home_pricingcards",
-      "target": "components_home_pricingcards_pricingtiers",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "components/home/PricingCards.js",
-      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -5418,17 +4936,6 @@
       "weight": 1.0
     },
     {
-      "source": "data_casestudiesdata",
-      "target": "data_casestudiesdata_casestudiesdata",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "data/caseStudiesData.js",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
       "source": "data_compliancemapdata",
       "target": "data_compliancemapdata_compliancemapdata",
       "relation": "contains",
@@ -5826,5 +5333,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "31ceab6bf3cb0c7a478719a95b2e9fa5a51efb45"
+  "built_at_commit": "5895566f129a962350e64ec5efd91bc3807d47b6"
 }
