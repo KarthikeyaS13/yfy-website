@@ -42,9 +42,6 @@ export default function ProductClientView({ product }) {
               <span>Book a Live Demo</span>
               <Icons.ArrowRight size={18} />
             </Link>
-            <Link href="/pricing" className={styles.btnSecondary}>
-              <span>View Pricing Plans</span>
-            </Link>
           </div>
 
           {/* Hero Stats */}

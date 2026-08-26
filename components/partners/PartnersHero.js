@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react';
 import styles from './PartnersHero.module.css';
 
 export default function PartnersHero() {
@@ -15,15 +16,15 @@ export default function PartnersHero() {
           </h1>
           
           <p className={`${styles.subtext} text-lg reveal reveal-delay-2`}>
-            Whether you manage clients, advise businesses, hire talent, or sell SaaS — yfy® helps you unlock new revenue streams with payroll, HR, and hiring technology.
+            Whether you manage clients, advise businesses, hire talent, or sell SaaS, yfy® helps you unlock new revenue streams with payroll, HR, and hiring technology.
           </p>
           
           <div className={`${styles.ctas} reveal reveal-delay-3`}>
-            <a href="#partner-registration" className="btn btn-primary btn-lg">
-              👉 Get Started as a Partner
+            <a href="#partner-registration" className="btn btn-primary btn-lg" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              Get Started as a Partner <ArrowRight size={18} />
             </a>
-            <a href="/platform/demo" className="btn btn-outline btn-lg">
-              👉 Book a Demo
+            <a href="/platform/demo" className="btn btn-outline btn-lg" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              Book a Demo <ArrowRight size={18} />
             </a>
           </div>
           

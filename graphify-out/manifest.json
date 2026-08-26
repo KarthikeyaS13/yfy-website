@@ -1,0 +1,512 @@
+{
+  "app/NewsletterForm.js": {
+    "mtime": 1775417055.0,
+    "seen": 1787637660.2959166,
+    "ast_hash": "b35816eb607a85a7dc0531a68c3570f5",
+    "semantic_hash": ""
+  },
+  "app/admin/compliance/page.js": {
+    "mtime": 1775508852.0,
+    "seen": 1787637660.2959309,
+    "ast_hash": "e11e1a1c91f002860eb9ad1f146ca9f1",
+    "semantic_hash": ""
+  },
+  "app/api/compliance/route.js": {
+    "mtime": 1775508801.0,
+    "seen": 1787637660.2959394,
+    "ast_hash": "137e425ba3e328560ef3383cc21b0120",
+    "semantic_hash": ""
+  },
+  "app/api/partners/apply/route.js": {
+    "mtime": 1775787729.0,
+    "seen": 1787637660.2959476,
+    "ast_hash": "1869d2d4f4a277666f63e34df737fb15",
+    "semantic_hash": ""
+  },
+  "app/blog/[slug]/page.js": {
+    "mtime": 1775508522.0,
+    "seen": 1787637660.2959545,
+    "ast_hash": "b4493028d7e20283e2ac2c2e6bd41cc5",
+    "semantic_hash": ""
+  },
+  "app/blog/page.js": {
+    "mtime": 1775508301.0,
+    "seen": 1787637660.2959607,
+    "ast_hash": "2a8d303217daa38c4d4a553a264390a5",
+    "semantic_hash": ""
+  },
+  "app/integrations/page.js": {
+    "mtime": 1785854440.0,
+    "seen": 1787637660.2959669,
+    "ast_hash": "f759deaabb1099c2736b30ae17134fb3",
+    "semantic_hash": ""
+  },
+  "app/layout.js": {
+    "mtime": 1787570362.0644586,
+    "seen": 1787637660.2959726,
+    "ast_hash": "c7a6f4edb2cf32b3601616b4aab17779",
+    "semantic_hash": ""
+  },
+  "app/page.js": {
+    "mtime": 1787561707.7812428,
+    "seen": 1787637660.2959783,
+    "ast_hash": "467ed97f632d515b3b2867b9ffb59078",
+    "semantic_hash": ""
+  },
+  "app/partners/[slug]/page.js": {
+    "mtime": 1775787775.0,
+    "seen": 1787637660.2959838,
+    "ast_hash": "0d8c1f868107f309117773cd09bb7679",
+    "semantic_hash": ""
+  },
+  "app/partners/page.js": {
+    "mtime": 1775749289.0,
+    "seen": 1787637660.2959898,
+    "ast_hash": "a7c4741da9764f01b7faf1c4d198cf3b",
+    "semantic_hash": ""
+  },
+  "app/platform/demo/page.js": {
+    "mtime": 1785858243.0,
+    "seen": 1787637660.2959967,
+    "ast_hash": "06aa7a5bce2433487362e64ddc5a70e3",
+    "semantic_hash": ""
+  },
+  "app/platform/employeelifecycle/page.js": {
+    "mtime": 1787575068.3477166,
+    "seen": 1787637660.2960021,
+    "ast_hash": "cdd7a92facdea927b0f10f0b4aa1c690",
+    "semantic_hash": ""
+  },
+  "app/platform/page.js": {
+    "mtime": 1787565171.6824555,
+    "seen": 1787637660.2960072,
+    "ast_hash": "d576d408960c4e3e8e0dcb93f86f5a42",
+    "semantic_hash": ""
+  },
+  "app/platform/roi/page.js": {
+    "mtime": 1781848312.0,
+    "seen": 1787637660.296013,
+    "ast_hash": "0b4035cab1617d7a3ecb33c7dfc33a66",
+    "semantic_hash": ""
+  },
+  "app/privacy/page.js": {
+    "mtime": 1787567276.9238203,
+    "seen": 1787637660.2960181,
+    "ast_hash": "c0bd8631bcfe162167b24ad828a19869",
+    "semantic_hash": ""
+  },
+  "app/products/[slug]/page.js": {
+    "mtime": 1784980978.0,
+    "seen": 1787637660.2960236,
+    "ast_hash": "771cac78e31c7023ccf9567b976a83d1",
+    "semantic_hash": ""
+  },
+  "app/products/page.js": {
+    "mtime": 1785852182.0,
+    "seen": 1787637660.296029,
+    "ast_hash": "72ba065784af3b90201b9a2581c4670e",
+    "semantic_hash": ""
+  },
+  "app/resources/compliance-calendar/page.js": {
+    "mtime": 1785857317.0,
+    "seen": 1787637660.2960346,
+    "ast_hash": "6d86b6a4f62048a8879db63a33f545ab",
+    "semantic_hash": ""
+  },
+  "app/robots.js": {
+    "mtime": 1775508868.0,
+    "seen": 1787637660.2960403,
+    "ast_hash": "8db85cf84b049c8e68ac3e7e58b4afe1",
+    "semantic_hash": ""
+  },
+  "app/sitemap.js": {
+    "mtime": 1787561713.8772688,
+    "seen": 1787637660.2960458,
+    "ast_hash": "8c9acdf7b621a82894f4c64c568f21e6",
+    "semantic_hash": ""
+  },
+  "app/solutions/enterprise/page.js": {
+    "mtime": 1781848334.0,
+    "seen": 1787637660.2960513,
+    "ast_hash": "11b096f9bcf501fea16ef290370574d4",
+    "semantic_hash": ""
+  },
+  "app/solutions/finance/page.js": {
+    "mtime": 1785848425.0,
+    "seen": 1787637660.296065,
+    "ast_hash": "1089d0c499c932c8da0de71420f6bf20",
+    "semantic_hash": ""
+  },
+  "app/solutions/hr-leaders/page.js": {
+    "mtime": 1785848399.0,
+    "seen": 1787637660.2960708,
+    "ast_hash": "4d305c305ace87b1e1cd0c568ab2d824",
+    "semantic_hash": ""
+  },
+  "app/solutions/it/page.js": {
+    "mtime": 1785848427.0,
+    "seen": 1787637660.2960765,
+    "ast_hash": "6a3f663eda27e3bfc8d2d7ad8ab08d61",
+    "semantic_hash": ""
+  },
+  "check_responsive.js": {
+    "mtime": 1785856495.0,
+    "seen": 1787637660.2960823,
+    "ast_hash": "adacf724167cf7d272e2ef51624452e7",
+    "semantic_hash": ""
+  },
+  "components/GlobalScripts.js": {
+    "mtime": 1775500743.0,
+    "seen": 1787637660.296088,
+    "ast_hash": "e5ab8186c91f13e8db4876539eabe17d",
+    "semantic_hash": ""
+  },
+  "components/IndiaMap/IndiaComplianceMap.js": {
+    "mtime": 1785856316.0,
+    "seen": 1787637660.296094,
+    "ast_hash": "ba919b641cf112dc48d4999914464ab3",
+    "semantic_hash": ""
+  },
+  "components/IndiaMap/IndiaMapSVG.js": {
+    "mtime": 1785853541.0,
+    "seen": 1787637660.2961004,
+    "ast_hash": "5d183cb797f3bad91018bcfdf3973972",
+    "semantic_hash": ""
+  },
+  "components/IndiaMap/Tooltip.js": {
+    "mtime": 1785853543.0,
+    "seen": 1787637660.2961056,
+    "ast_hash": "f30aaa47f65cdd72932c569ff0e356da",
+    "semantic_hash": ""
+  },
+  "components/home/ComplianceUSP.js": {
+    "mtime": 1787570378.4720354,
+    "seen": 1787637660.2961118,
+    "ast_hash": "9d9e99203a3ff788752f48220e1bd688",
+    "semantic_hash": ""
+  },
+  "components/home/FeaturesSnapshot.js": {
+    "mtime": 1786100686.0,
+    "seen": 1787637660.2961261,
+    "ast_hash": "4db9d1a175c2b2b83a5351c195b3567a",
+    "semantic_hash": ""
+  },
+  "components/home/FinalCTA.js": {
+    "mtime": 1787570374.3822463,
+    "seen": 1787637660.296132,
+    "ast_hash": "5b232a63cb998c38296c56f6323f83ec",
+    "semantic_hash": ""
+  },
+  "components/home/HeroSection.js": {
+    "mtime": 1787576413.1910868,
+    "seen": 1787637660.2961376,
+    "ast_hash": "d912b3e5e80a53e4fa7e1942f4a92e52",
+    "semantic_hash": ""
+  },
+  "components/home/IntegrationsStrip.js": {
+    "mtime": 1775490153.0,
+    "seen": 1787637660.2961428,
+    "ast_hash": "740c63b07e988c5e750124e3439b960e",
+    "semantic_hash": ""
+  },
+  "components/home/IsoCerts.js": {
+    "mtime": 1787570372.3344235,
+    "seen": 1787637660.2961485,
+    "ast_hash": "a7323dffdf4bc2268270af3a3a32f789",
+    "semantic_hash": ""
+  },
+  "components/home/ROITeaser.js": {
+    "mtime": 1786164791.0,
+    "seen": 1787637660.296154,
+    "ast_hash": "9fcf94587d77b280d98fe490864ad2b2",
+    "semantic_hash": ""
+  },
+  "components/home/Testimonials.js": {
+    "mtime": 1787570376.4144099,
+    "seen": 1787637660.2961593,
+    "ast_hash": "6aa22ba8d96e441d295b8780bc132064",
+    "semantic_hash": ""
+  },
+  "components/home/TrustBar.js": {
+    "mtime": 1787576353.6769774,
+    "seen": 1787637660.2961648,
+    "ast_hash": "a5a32aa0b5b15f1f22b9a72573aca664",
+    "semantic_hash": ""
+  },
+  "components/home/WhyYfy.js": {
+    "mtime": 1787570370.2877426,
+    "seen": 1787637660.2961705,
+    "ast_hash": "2d6335918a7df7e95dcfbb042ae6f6a3",
+    "semantic_hash": ""
+  },
+  "components/partners/HowItWorks.js": {
+    "mtime": 1775749234.0,
+    "seen": 1787637660.2961762,
+    "ast_hash": "bc869c91386174df40eddeb41c3c279c",
+    "semantic_hash": ""
+  },
+  "components/partners/InteractiveEntry.js": {
+    "mtime": 1775789581.0,
+    "seen": 1787637660.2961814,
+    "ast_hash": "f2a6dfe42ee8cbbfcce815c6c3ccb5c7",
+    "semantic_hash": ""
+  },
+  "components/partners/PartnerApplyForm.js": {
+    "mtime": 1787570366.1134448,
+    "seen": 1787637660.296187,
+    "ast_hash": "ac24c01f81104f05289e600eef4b2e4c",
+    "semantic_hash": ""
+  },
+  "components/partners/PartnerTypes.js": {
+    "mtime": 1787570368.2144375,
+    "seen": 1787637660.2961965,
+    "ast_hash": "423871d9f332b6b72313978f06fbc869",
+    "semantic_hash": ""
+  },
+  "components/partners/PartnersCTA.js": {
+    "mtime": 1787565169.6704445,
+    "seen": 1787637660.2962024,
+    "ast_hash": "a57904d114986953c1b5a14de732951d",
+    "semantic_hash": ""
+  },
+  "components/partners/PartnersHero.js": {
+    "mtime": 1787570382.5983894,
+    "seen": 1787637660.296208,
+    "ast_hash": "cba6bf5b7e6116f29980909bb144a10a",
+    "semantic_hash": ""
+  },
+  "components/partners/PartnersTrust.js": {
+    "mtime": 1785848564.0,
+    "seen": 1787637660.2962139,
+    "ast_hash": "82f99a8a79adf9b1e5f8f9e9df710427",
+    "semantic_hash": ""
+  },
+  "components/partners/ValueProps.js": {
+    "mtime": 1787570380.515396,
+    "seen": 1787637660.2962193,
+    "ast_hash": "f5c77a6171db8b9c954d2f34b50e1497",
+    "semantic_hash": ""
+  },
+  "components/platform/ROICalculator.js": {
+    "mtime": 1787570384.6343825,
+    "seen": 1787637660.2962248,
+    "ast_hash": "7fd24e4c9ed29b071b9bc3fb6ed560e1",
+    "semantic_hash": ""
+  },
+  "components/platform/ROICalculatorWrapper.js": {
+    "mtime": 1787564311.777292,
+    "seen": 1787637660.2962303,
+    "ast_hash": "4e41a4cae942fef336f37fee58ef8ca5",
+    "semantic_hash": ""
+  },
+  "components/platform/ROIPdfTemplate.js": {
+    "mtime": 1775671732.0,
+    "seen": 1787637660.296236,
+    "ast_hash": "3660f112d400b3eaf90124819b59dc5b",
+    "semantic_hash": ""
+  },
+  "components/platform/ROIScrollButton.js": {
+    "mtime": 1775636537.0,
+    "seen": 1787637660.2962415,
+    "ast_hash": "bc1782bec459198e4f1cb8c07908f646",
+    "semantic_hash": ""
+  },
+  "components/products/ProductClientView.js": {
+    "mtime": 1787561715.9112773,
+    "seen": 1787637660.2962468,
+    "ast_hash": "c9e992ca5fdede987977279ed19a58cf",
+    "semantic_hash": ""
+  },
+  "components/ui/Footer.js": {
+    "mtime": 1787576490.8534408,
+    "seen": 1787637660.2962523,
+    "ast_hash": "cc675a96c3433336d37c185de2999da5",
+    "semantic_hash": ""
+  },
+  "components/ui/Navbar.js": {
+    "mtime": 1787576472.8811362,
+    "seen": 1787637660.2962575,
+    "ast_hash": "a92329639d673d1398744b7450044fc3",
+    "semantic_hash": ""
+  },
+  "data/compliance.json": {
+    "mtime": 1775506696.0,
+    "seen": 1787637660.296263,
+    "ast_hash": "3ec396fe77cc56f69d1baadebf823f3d",
+    "semantic_hash": ""
+  },
+  "data/complianceMapData.js": {
+    "mtime": 1785853511.0,
+    "seen": 1787637660.296268,
+    "ast_hash": "6719a70493128b55a9c4af40d94ccda8",
+    "semantic_hash": ""
+  },
+  "data/partnersData.js": {
+    "mtime": 1775784298.0,
+    "seen": 1787637660.2962735,
+    "ast_hash": "a2cf0f700971fd6b1d1ee127823eb59d",
+    "semantic_hash": ""
+  },
+  "data/productsData.js": {
+    "mtime": 1785845161.0,
+    "seen": 1787637660.2962787,
+    "ast_hash": "c0fa3721290cdbb8f4a81ca406aa9fbd",
+    "semantic_hash": ""
+  },
+  "eslint.config.mjs": {
+    "mtime": 1775415868.0,
+    "seen": 1787637660.296284,
+    "ast_hash": "bcb00e240634dd9448e57386fdff1902",
+    "semantic_hash": ""
+  },
+  "jsconfig.json": {
+    "mtime": 1775415868.0,
+    "seen": 1787637660.2962892,
+    "ast_hash": "21306b44064ae42bbbd715b1986abaf8",
+    "semantic_hash": ""
+  },
+  "lib/markdown.js": {
+    "mtime": 1775508256.0,
+    "seen": 1787637660.296295,
+    "ast_hash": "e786a98e638b1ed9708cd820056ed03a",
+    "semantic_hash": ""
+  },
+  "next.config.mjs": {
+    "mtime": 1775415868.0,
+    "seen": 1787637660.296301,
+    "ast_hash": "9b2513e16440eb1cf02bc3ff4b3d8a34",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1785853498.0,
+    "seen": 1787637660.296306,
+    "ast_hash": "a921b007388bea49fbe2d2974fe416c8",
+    "semantic_hash": ""
+  },
+  ".agents/rules/graphify.md": {
+    "mtime": 1787637366.947981,
+    "seen": 1787637660.2963111,
+    "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
+    "semantic_hash": ""
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1787637366.9481518,
+    "seen": 1787637660.2963169,
+    "ast_hash": "6d73634a678cf1e1c71930adf80bd1f0",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1775415928.0,
+    "seen": 1787637660.2963226,
+    "ast_hash": "9e09241799026ac05be315a2f0b50055",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1775415928.0,
+    "seen": 1787637660.2963276,
+    "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1775415868.0,
+    "seen": 1787637660.2963474,
+    "ast_hash": "c857cd84a634c198d4501b107da02a78",
+    "semantic_hash": ""
+  },
+  "content/blog/indian-labour-codes-2020-guide.md": {
+    "mtime": 1775508277.0,
+    "seen": 1787637660.2963583,
+    "ast_hash": "8f98cc65813bb8925213125d361a32b3",
+    "semantic_hash": ""
+  },
+  "content/blog/roi-on-payroll-automation.md": {
+    "mtime": 1775508279.0,
+    "seen": 1787637660.2963648,
+    "ast_hash": "f5bca15e2d8be7f83291446b3ca0603b",
+    "semantic_hash": ""
+  },
+  "app/icon.png": {
+    "mtime": 1785858918.0,
+    "seen": 1787637660.2963707,
+    "ast_hash": "fbe6a8d4cb2ec5d1f15603b99a0321f9",
+    "semantic_hash": ""
+  },
+  "public/assets/enterprise-hero.png": {
+    "mtime": 1775677712.0,
+    "seen": 1787637660.296376,
+    "ast_hash": "1121d093cbdb993bd5ff9e63225def41",
+    "semantic_hash": ""
+  },
+  "public/assets/sme-dashboard.png": {
+    "mtime": 1775676500.0,
+    "seen": 1787637660.2963822,
+    "ast_hash": "1fb8110ce6c22ef782918d9d67ceed9a",
+    "semantic_hash": ""
+  },
+  "public/assets/startup-hero.png": {
+    "mtime": 1775675305.0,
+    "seen": 1787637660.2963881,
+    "ast_hash": "b6f37e86e86b3697043c1f486ce63d08",
+    "semantic_hash": ""
+  },
+  "public/file.svg": {
+    "mtime": 1775415868.0,
+    "seen": 1787637660.2963946,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": ""
+  },
+  "public/globe.svg": {
+    "mtime": 1775415868.0,
+    "seen": 1787637660.2964,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": ""
+  },
+  "public/images/partners/ca-hero.png": {
+    "mtime": 1775783879.0,
+    "seen": 1787637660.296406,
+    "ast_hash": "2e1c9a4ed069bed616b0b3ec583c6ed4",
+    "semantic_hash": ""
+  },
+  "public/images/partners/hr-hero.png": {
+    "mtime": 1775784077.0,
+    "seen": 1787637660.296412,
+    "ast_hash": "644bf707a5428cbeb38cbccd76663f0b",
+    "semantic_hash": ""
+  },
+  "public/images/partners/recruitment-hero.png": {
+    "mtime": 1775783696.0,
+    "seen": 1787637660.2964187,
+    "ast_hash": "6b4cc84713109058ab8e7eb4dbd0e512",
+    "semantic_hash": ""
+  },
+  "public/images/partners/saas-hero.png": {
+    "mtime": 1775784285.0,
+    "seen": 1787637660.2964249,
+    "ast_hash": "c1000a9ce045a621b12bcdca3b35455d",
+    "semantic_hash": ""
+  },
+  "public/next.svg": {
+    "mtime": 1775415868.0,
+    "seen": 1787637660.2964315,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": ""
+  },
+  "public/vercel.svg": {
+    "mtime": 1775415868.0,
+    "seen": 1787637660.2964382,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": ""
+  },
+  "public/window.svg": {
+    "mtime": 1775415868.0,
+    "seen": 1787637660.296444,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": ""
+  },
+  "public/yfy-logo.jpg": {
+    "mtime": 1785858737.0,
+    "seen": 1787637660.29645,
+    "ast_hash": "e25df499f3361216a43db1f9adc59db9",
+    "semantic_hash": ""
+  }
+}

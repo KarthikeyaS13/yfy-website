@@ -16,7 +16,7 @@ export default function FinalCTA() {
           </h2>
           <p className={styles.desc}>
             Join India's leading enterprises that trust <b>yfy®</b> to automate
-            HR, payroll, and compliance — with full New Labour Codes 2020 readiness.
+            HR, payroll, and compliance, with full New Labour Codes 2020 readiness.
           </p>
           <div className={styles.ctas}>
             <a href="/platform/demo" className="btn btn-primary btn-lg" id="final-cta-free">

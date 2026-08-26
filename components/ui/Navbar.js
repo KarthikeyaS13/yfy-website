@@ -152,8 +152,9 @@ function MegaMenuContent({ cols }) {
             onMouseEnter={() => setActiveIdx(idx)}
             style={{
               textAlign: 'left',
-              background: activeIdx === idx ? 'rgba(107, 31, 162, 0.2)' : 'transparent',
+              background: activeIdx === idx ? 'rgba(255, 255, 255, 0.05)' : 'transparent',
               color: activeIdx === idx ? '#fff' : 'var(--text-secondary)',
+              boxShadow: activeIdx === idx ? 'inset 3px 0 0 var(--accent-secondary)' : 'none',
               border: 'none',
               padding: '0.85rem 1rem',
               borderRadius: '8px',
@@ -329,12 +330,12 @@ export default function Navbar() {
           left: 50%;
           transform: translateX(-50%) translateY(10px);
           background: rgba(14, 6, 28, 0.98);
-          border: 1px solid var(--border);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           border-radius: var(--radius-xl);
           padding: 1.5rem;
           backdrop-filter: blur(32px);
           -webkit-backdrop-filter: blur(32px);
-          box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+          box-shadow: 0 32px 80px rgba(0,0,0,0.8), 0 0 0 1px rgba(107, 31, 162, 0.1);
           opacity: 0;
           visibility: hidden;
           transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
@@ -496,7 +497,6 @@ export default function Navbar() {
 
           <div className="nav-cta">
             <Link href="/platform/demo" className="btn btn-outline btn-sm">Request Demo</Link>
-            <Link href="/pricing" className="btn btn-primary btn-sm">Talk to Sales</Link>
             
             <button 
               className="mobile-toggle" 
@@ -577,7 +577,6 @@ export default function Navbar() {
         
         <div style={{ marginTop: 'auto', padding: '1.5rem 0', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <Link href="/platform/demo" className="btn btn-outline" style={{width: '100%', textAlign: 'center'}} onClick={() => setIsMenuOpen(false)}>Book Demo</Link>
-          <Link href="/pricing" className="btn btn-primary" style={{width: '100%', textAlign: 'center'}} onClick={() => setIsMenuOpen(false)}>Get Started</Link>
         </div>
       </div>
     </>

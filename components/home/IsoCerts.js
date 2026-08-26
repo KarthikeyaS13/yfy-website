@@ -19,7 +19,7 @@ export default function IsoCerts() {
               <span className="text-gradient">Trusted by Enterprises.</span>
             </h2>
             <p className={styles.desc}>
-              <b>yfy®</b> maintains three ISO certifications — ensuring quality, security, and privacy
+              <b>yfy®</b> maintains three ISO certifications, ensuring quality, security, and privacy
               for every HR workflow, payroll transaction, and compliance filing.
             </p>
             <div className={styles.trademark}>

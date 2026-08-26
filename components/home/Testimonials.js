@@ -11,7 +11,7 @@ const testimonials = [
     tag: 'Enterprise · 800 employees',
   },
   {
-    quote: <>We integrated <b>yfy®</b> with Zoho Books — payroll entries now flow automatically to accounting. Zero manual journal entries. Our CA loves it.</>,
+    quote: <>We integrated <b>yfy®</b> with Zoho Books. Payroll entries now flow automatically to accounting. Zero manual journal entries. Our CA loves it.</>,
     name: 'Rajesh Kumar',
     role: 'CFO',
     company: 'LogisticsCorp',

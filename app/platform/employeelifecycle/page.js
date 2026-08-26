@@ -14,7 +14,8 @@ import {
   Shield, 
   Smartphone, 
   Lock,
-  BarChart3
+  BarChart3,
+  ArrowRight
 } from 'lucide-react';
 import styles from './platform.module.css';
 
@@ -80,7 +81,7 @@ export default function PlatformOverviewPage() {
         <div className={styles.heroBadge}>Automate workforce operations, ensure statutory compliance, and model organization growth with intelligent workflows and real-time insights.</div>
         <h1 className={styles.heroTitle}>End-to-End Workforce Infrastructure<br/>for the Complete Employee Lifecycle</h1>
         <p className={styles.heroSubtitle}>
-          Streamline every stage of your workforce journey—from hiring and onboarding to payroll, compliance, and strategic planning—with a unified, AI-powered Workforce OS designed for modern businesses.
+          Streamline every stage of your workforce journey, from hiring and onboarding to payroll, compliance, and strategic planning, with a unified, AI-powered Workforce OS designed for modern businesses.
         </p>
       </section>
 
@@ -93,61 +94,64 @@ export default function PlatformOverviewPage() {
           </p>
         </div>
 
-        {/* Milestone Card System */}
-        <div className={styles.stepContainer}>
-          {lifecycleStages.map((stage) => (
-            <div 
-              key={stage.id} 
-              className={`${styles.stepCard} ${activeStage === stage.id ? styles.activeCard : ""}`}
-              onClick={() => setActiveStage(stage.id)}
-            >
-              <div className={styles.stepHeader}>
-                <span className={styles.stepNumber}>0{stage.id}</span>
-                <div className={styles.stepIcon}>{stage.icon}</div>
+        {/* Split Layout Container */}
+        <div className={styles.lifecycleSplitLayout}>
+          {/* Milestone Card System */}
+          <div className={styles.stepContainer}>
+            {lifecycleStages.map((stage) => (
+              <div 
+                key={stage.id} 
+                className={`${styles.stepCard} ${activeStage === stage.id ? styles.activeCard : ""}`}
+                onClick={() => setActiveStage(stage.id)}
+              >
+                <div className={styles.stepHeader}>
+                  <span className={styles.stepNumber}>0{stage.id}</span>
+                  <div className={styles.stepIcon}>{stage.icon}</div>
+                </div>
+                <h3 className={styles.stepTitle}>{stage.title}</h3>
+                {activeStage === stage.id && <div className={styles.activeIndicator}></div>}
               </div>
-              <h3 className={styles.stepTitle}>{stage.title}</h3>
-              {activeStage === stage.id && <div className={styles.activeIndicator}></div>}
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Dynamic Detail Card */}
-        <div className={styles.detailContainer}>
-          {lifecycleStages.map((stage) => (
-             <div 
-               key={`detail-${stage.id}`} 
-               className={`${styles.detailCard} ${activeStage === stage.id ? styles.activeDetail : ''}`}
-             >
-               <div className={styles.detailHeader}>
-                 <div className={styles.detailIconWrapper}>{stage.icon}</div>
-                 <div>
-                    <h3 className={styles.detailTitle}>{stage.title} Workflow</h3>
-                    <p className={styles.detailDesc}>{stage.desc}</p>
+          {/* Dynamic Detail Card */}
+          <div className={styles.detailContainer}>
+            {lifecycleStages.map((stage) => (
+               <div 
+                 key={`detail-${stage.id}`} 
+                 className={`${styles.detailCard} ${activeStage === stage.id ? styles.activeDetail : ''}`}
+               >
+                 <div className={styles.detailHeader}>
+                   <div className={styles.detailIconWrapper}>{stage.icon}</div>
+                   <div>
+                      <h3 className={styles.detailTitle}>{stage.title} Workflow</h3>
+                      <p className={styles.detailDesc}>{stage.desc}</p>
+                   </div>
+                 </div>
+                 <div className={styles.detailFeaturesGrid}>
+                    <div className={styles.featuresColumn}>
+                      <h4 className={styles.columnHeader}>Modules Included</h4>
+                      {stage.features.map((feature, i) => (
+                        <div key={`feat-${i}`} className={styles.detailFeatureBox}>
+                            <span className={styles.featureCheck}>✓</span>
+                            {feature}
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className={styles.featuresColumn}>
+                      <h4 className={styles.columnHeader}>Key Benefits</h4>
+                      {stage.benefits.map((benefit, i) => (
+                        <div key={`ben-${i}`} className={styles.detailFeatureBox}>
+                            <span className={styles.benefitCheck}>★</span>
+                            {benefit}
+                        </div>
+                      ))}
+                    </div>
                  </div>
                </div>
-               <div className={styles.detailFeaturesGrid}>
-                  <div className={styles.featuresColumn}>
-                    <h4 className={styles.columnHeader}>Modules Included</h4>
-                    {stage.features.map((feature, i) => (
-                      <div key={`feat-${i}`} className={styles.detailFeatureBox}>
-                          <span className={styles.featureCheck}>✓</span>
-                          {feature}
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className={styles.featuresColumn}>
-                    <h4 className={styles.columnHeader}>Key Benefits</h4>
-                    {stage.benefits.map((benefit, i) => (
-                      <div key={`ben-${i}`} className={styles.detailFeatureBox}>
-                          <span className={styles.benefitCheck}>★</span>
-                          {benefit}
-                      </div>
-                    ))}
-                  </div>
-               </div>
-             </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
@@ -219,10 +223,10 @@ export default function PlatformOverviewPage() {
         <p>Join over 2,000+ Indian companies running compliant, automated payroll on yfy.ai.</p>
         <div className={styles.ctaButtons}>
           <Link href="#modules" className={styles.primaryBtn} onClick={(e) => { e.preventDefault(); document.querySelector(`.${styles.lifecycleSection}`).scrollIntoView({ behavior: 'smooth' }); }}>
-            👉 See Modules in Action
+            See Modules in Action <ArrowRight size={20} />
           </Link>
           <Link href="/platform/demo" className={styles.secondaryBtn}>
-            👉 Request a Demo
+            Request a Demo <ArrowRight size={20} />
           </Link>
         </div>
       </section>

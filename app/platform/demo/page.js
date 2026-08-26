@@ -201,6 +201,34 @@ export default function DemoPage() {
         </div>
 
       </div>
+
+      {/* Location / Map Section at the bottom */}
+      <div className={`container ${styles.mapContainer}`}>
+        <div className={styles.mapGrid}>
+          <div className={styles.mapInfo}>
+            <h3 className={styles.mapTitle}>Visit Our Office</h3>
+            <div className={styles.mapDetails}>
+              <p><strong>FINNOVO®</strong></p>
+              <p>#102, Bhanu Elite</p>
+              <p>Image Hospital Road, Madhapur</p>
+              <p>Hyderabad, Telangana - 500 081</p>
+              <p style={{ marginTop: '1rem' }}><strong>Email:</strong> info@yfy.ai</p>
+              <p><strong>Phone:</strong> +91 812185 2224</p>
+            </div>
+          </div>
+          <div className={styles.mapIframeWrapper}>
+            <iframe 
+              src="https://maps.google.com/maps?q=Bhanu+Elite,+Image+Hospital+Road,+Madhapur,+Hyderabad,+Telangana&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

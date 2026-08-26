@@ -15,7 +15,7 @@ const values = [
   {
     icon: <Zap className={styles.valIcon} />,
     title: 'Automate Operations',
-    desc: 'Payroll, compliance, HR, and hiring — all streamlined.'
+    desc: 'Payroll, compliance, HR, and hiring, all streamlined.'
   },
   {
     icon: <HeartHandshake className={styles.valIcon} />,

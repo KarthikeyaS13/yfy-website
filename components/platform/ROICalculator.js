@@ -7,7 +7,7 @@ import {
   Plus, Minus, Wallet, Bot, TrendingUp, BarChart3, 
   Clock, ShieldAlert, Zap, Calendar, IndianRupee,
   CheckCircle2, ShieldCheck, Target, Cpu, RefreshCcw, XCircle,
-  Mail, Building2, User, Send, CheckCircle
+  Mail, Building2, User, Send, CheckCircle, ArrowRight
 } from 'lucide-react';
 
 export default function ROICalculator({ isInitiallyBlank = false }) {
@@ -210,7 +210,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Total Number of Employees*</label>
-                  <span className={styles.formDesc}>👉 Employees on payroll (including full-time & contractual)</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Employees on payroll (including full-time & contractual)</span>
                 </div>
                 <div className={styles.numberDisplay}>{formatNumber(data.numEmployees)}</div>
               </div>
@@ -225,7 +225,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Operational Presence*</label>
-                  <span className={styles.formDesc}>👉 More states = higher compliance & payroll risk</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> More states = higher compliance & payroll risk</span>
                 </div>
                 <div className={styles.toggleGroup}>
                   <button className={`${styles.toggleBtn} ${data.operationalPresence === 'Single State' ? styles.active : ''}`} onClick={() => handleToggle('operationalPresence', 'Single State')}>Single State</button>
@@ -237,7 +237,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Pay Cycle Structure*</label>
-                  <span className={styles.formDesc}>👉 Frequency of salary processing</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Frequency of salary processing</span>
                 </div>
                 <div className={styles.toggleGroup}>
                   <button 
@@ -259,7 +259,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Average Monthly Salary per Employee (₹)</label>
-                  <span className={styles.formDesc}>👉 Used to estimate payroll exposure & error impact</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Used to estimate payroll exposure & error impact</span>
                 </div>
                 <div className={styles.currencyDisplay}>{formatINRCurrency(data.avgSalary)}</div>
               </div>
@@ -287,7 +287,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Number of Payroll Executives*</label>
                   <span className={styles.formDesc} style={{ marginBottom: '0.25rem' }}>Min: 0 - Max: 100</span>
-                  <span className={styles.formDesc}>👉 Staff involved in salary processing, corrections & reporting</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Staff involved in salary processing, corrections & reporting</span>
                 </div>
                 <div className={styles.stepper}>
                   <button className={styles.stepBtn} onClick={() => handleStepChange('numPayrollExecs', -1, 0, 100)}><Minus size={14} /></button>
@@ -302,7 +302,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Number of HR / Compliance Staff</label>
                   <span className={styles.formDesc} style={{ marginBottom: '0.25rem' }}>Min: 0 - Max: 100</span>
-                  <span className={styles.formDesc}>👉 Handling filings, audits, notices & inspections</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Handling filings, audits, notices & inspections</span>
                 </div>
                 <div className={styles.stepper}>
                   <button className={styles.stepBtn} onClick={() => handleStepChange('numHRStaff', -1, 0, 100)}><Minus size={14} /></button>
@@ -316,7 +316,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Average Monthly Salary – Payroll Executive (₹)*</label>
-                  <span className={styles.formDesc}>👉 Gross monthly salary</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Gross monthly salary</span>
                 </div>
                 <div className={styles.currencyDisplay}>{formatINRCurrency(data.monthlySalaryPayrollExec)}</div>
               </div>
@@ -327,7 +327,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Average Monthly Salary – HR / Compliance Staff (₹)</label>
-                  <span className={styles.formDesc}>👉 Gross monthly salary</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Gross monthly salary</span>
                 </div>
                 <div className={styles.currencyDisplay}>{formatINRCurrency(data.monthlySalaryHRStaff)}</div>
               </div>
@@ -338,7 +338,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Time Spent on Payroll & Compliance (%)*</label>
-                  <span className={styles.formDesc}>👉 Portion of total working time spent by Finance & HR teams on payroll processing, statutory compliance, coordination, and follow-ups</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Portion of total working time spent by Finance & HR teams on payroll processing, statutory compliance, coordination, and follow-ups</span>
                 </div>
                 <span className={styles.percentageDisplay}>{data.timeSpentPercent}%</span>
               </div>
@@ -356,7 +356,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Payroll Software Cost (₹ / month)</label>
-                  <span className={styles.formDesc}>👉 Monthly subscription for payroll processing software</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Monthly subscription for payroll processing software</span>
                 </div>
                 <div className={styles.currencyDisplay}>{formatINRCurrency(data.payrollSoftwareCost)}</div>
               </div>
@@ -367,7 +367,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>HRMS Software Cost (₹ / month)</label>
-                  <span className={styles.formDesc}>👉 Employee lifecycle and HR management tools</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Employee lifecycle and HR management tools</span>
                 </div>
                 <div className={styles.currencyDisplay}>{formatINRCurrency(data.hrmsSoftwareCost)}</div>
               </div>
@@ -378,7 +378,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>TDS / Compliance Tool Cost (₹ / month)</label>
-                  <span className={styles.formDesc}>👉 Tools used for tax and statutory compliance filings</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Tools used for tax and statutory compliance filings</span>
                 </div>
                 <div className={styles.currencyDisplay}>{formatINRCurrency(data.tdsToolCost)}</div>
               </div>
@@ -386,7 +386,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
             </div>
 
             <div className={styles.infoAlert} style={{ marginTop: '0', marginBottom: '2rem' }}>
-              👉 Multiple tools = integrations, errors & duplicate work.
+              <ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Multiple tools = integrations, errors & duplicate work.
             </div>
 
             <h3 style={{ marginBottom: '1.5rem' }}>Annual Services</h3>
@@ -395,7 +395,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>CA / Consultant Fees (₹ / year)</label>
-                  <span className={styles.formDesc}>👉 Professional fees for payroll, tax, or compliance support</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Professional fees for payroll, tax, or compliance support</span>
                 </div>
                 <div className={styles.currencyDisplay}>{formatINRCurrency(data.caFees)}</div>
               </div>
@@ -406,7 +406,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>PF / ESI Vendor / Outsourcing Fees (₹ / year)</label>
-                  <span className={styles.formDesc}>👉 Third-party services for statutory processing</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Third-party services for statutory processing</span>
                 </div>
                 <div className={styles.currencyDisplay}>{formatINRCurrency(data.pfEsiFees)}</div>
               </div>
@@ -429,7 +429,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Payroll Errors per Year</label>
                   <span className={styles.formDesc} style={{ marginBottom: '0.25rem' }}>Min: 0 - Max: 100</span>
-                  <span className={styles.formDesc}>👉 Errors requiring correction, reprocessing or employee escalation</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Errors requiring correction, reprocessing or employee escalation</span>
                 </div>
                 <div className={styles.stepper}>
                   <button className={styles.stepBtn} onClick={() => handleStepChange('payrollErrorsPerYear', -1, 0, 100)}><Minus size={14} /></button>
@@ -443,7 +443,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Average Cost per Payroll Error (₹)</label>
-                  <span className={styles.formDesc}>👉 Includes rework, employee dissatisfaction & management effort</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Includes rework, employee dissatisfaction & management effort</span>
                 </div>
                 <div className={styles.currencyDisplay}>
                   {formatINRCurrency(data.payrollErrorsPerYear === 0 ? 0 : data.costPerError)}
@@ -463,7 +463,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Statutory Penalties (Last 12 Months) (₹)</label>
-                  <span className={styles.formDesc}>👉 PF, ESI, TDS, or other statutory penalties</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> PF, ESI, TDS, or other statutory penalties</span>
                 </div>
                 <div className={styles.currencyDisplay}>{formatINRCurrency(data.statutoryPenalties)}</div>
               </div>
@@ -474,7 +474,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Interest on Delayed Statutory Payments (₹)</label>
-                  <span className={styles.formDesc}>👉 Interest paid due to delayed filings or payments</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Interest paid due to delayed filings or payments</span>
                 </div>
                 <div className={styles.currencyDisplay}>{formatINRCurrency(data.interestDelayed)}</div>
               </div>
@@ -485,25 +485,13 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Notices Received from Authorities*</label>
-                  <span className={styles.formDesc}>👉 Income Tax, PF, ESI, or labour department notices</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Income Tax, PF, ESI, or labour department notices</span>
                 </div>
                 <select 
                   name="noticesReceived" 
                   value={data.noticesReceived} 
                   onChange={handleInputChange} 
-                  style={{ 
-                    padding: '0.4rem 0.75rem', 
-                    borderRadius: '8px', 
-                    border: '1px solid var(--border-color, #e5e7eb)', 
-                    fontSize: '0.95rem', 
-                    fontWeight: '600',
-                    color: 'var(--primary-color, #1e1b4b)',
-                    backgroundColor: 'var(--bg-neutral, #f9fafb)', 
-                    cursor: 'pointer', 
-                    minWidth: '130px',
-                    outline: 'none',
-                    fontFamily: 'inherit'
-                  }}
+                  className={styles.customSelect}
                 >
                   <option value="Select value" disabled>Select value</option>
                   <option value="✅ None">✅ None</option>
@@ -514,7 +502,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
             </div>
 
             <div className={styles.disclaimerBlock}>
-              <p>📌 Compliance issues don’t just cost money—they consume leadership bandwidth and damage employer credibility.</p>
+              <p>📌 Compliance issues don’t just cost money. They consume leadership bandwidth and damage employer credibility.</p>
             </div>
           </div>
         )}
@@ -528,7 +516,7 @@ export default function ROICalculator({ isInitiallyBlank = false }) {
               <div className={styles.formHeader}>
                 <div className={styles.labelWrapper}>
                   <label className={styles.formLabel}>Monthly Subscription per Employee (₹)</label>
-                  <span className={styles.formDesc}>👉 Upper-range estimate. Volume discounts may apply.</span>
+                  <span className={styles.formDesc}><ArrowRight size={14} style={{ marginBottom: '-2px', marginRight: '4px' }} /> Upper-range estimate. Volume discounts may apply.</span>
                 </div>
                 <div className={styles.currencyDisplay}>₹{data.monthlySubscriptionConfig}</div>
               </div>

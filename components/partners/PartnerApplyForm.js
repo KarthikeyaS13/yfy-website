@@ -96,9 +96,9 @@ export default function PartnerApplyForm({ type, title }) {
       
       <div className={styles.header}>
         <h2 className={styles.headline}>
-          {isAccountant && 'Manage Payroll for All Your Clients — From One Dashboard'}
+          {isAccountant && 'Manage Payroll for All Your Clients From One Dashboard'}
           {isHR && 'Power Your HR Services with Automation'}
-          {isRecruitment && 'Expand Beyond Hiring — Own the Full Employee Lifecycle'}
+          {isRecruitment && 'Expand Beyond Hiring: Own the Full Employee Lifecycle'}
           {isSaaS && 'Earn Recurring Revenue by Selling yfy®'}
           {!isAccountant && !isHR && !isRecruitment && !isSaaS && `Join the yfy® ${title} Partner Program`}
         </h2>
@@ -461,10 +461,10 @@ export default function PartnerApplyForm({ type, title }) {
               <Loader2 className="spinner" size={20} />
             ) : (
               <>
-                {isAccountant && '👉 Start Managing Client Payroll'}
-                {isHR && '👉 Become an HR Partner'}
-                {isRecruitment && '👉 Upgrade Your Recruitment Business'}
-                {isSaaS && '👉 Become a Sales Partner'}
+                {isAccountant && 'Start Managing Client Payroll'}
+                {isHR && 'Become an HR Partner'}
+                {isRecruitment && 'Upgrade Your Recruitment Business'}
+                {isSaaS && 'Become a Sales Partner'}
                 {!isAccountant && !isHR && !isRecruitment && !isSaaS && 'Submit Application'}
                 <ArrowRight size={20} />
               </>

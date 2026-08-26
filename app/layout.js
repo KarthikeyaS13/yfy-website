@@ -55,10 +55,9 @@ export default function RootLayout({ children }) {
               url: 'https://yfy.ai',
               logo: 'https://yfy.ai/logo.png',
               description:
-                'yfy.ai is India\'s compliance-first workforce infrastructure platform — an intelligent operating system unifying ATS, HRMS, payroll, compliance intelligence, and workforce analytics.',
+                'yfy.ai is India\'s compliance-first workforce infrastructure platform, an intelligent operating system unifying ATS, HRMS, payroll, compliance intelligence, and workforce analytics.',
               sameAs: [
-                'https://www.linkedin.com/company/yfy-ai',
-                'https://twitter.com/yfy_ai',
+                'https://www.linkedin.com/showcase/yfy-ai/',
               ],
               contactPoint: {
                 '@type': 'ContactPoint',

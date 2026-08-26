@@ -1,4 +1,5 @@
 import styles from './PartnersCTA.module.css';
+import { ArrowRight } from 'lucide-react';
 
 export default function PartnersCTA() {
   return (
@@ -21,10 +22,10 @@ export default function PartnersCTA() {
           
           <div className={styles.ctas}>
             <a href="#register" className="btn btn-primary btn-lg">
-              👉 Become a Partner
+              Become a Partner <ArrowRight size={20} />
             </a>
             <a href="/contact" className="btn btn-outline btn-lg">
-              👉 Talk to Our Team
+              Talk to Our Team <ArrowRight size={20} />
             </a>
           </div>
         </div>

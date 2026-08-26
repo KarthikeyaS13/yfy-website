@@ -1,6 +1,7 @@
 import HeroSection from '@/components/home/HeroSection';
+import PricingCards from '@/components/home/PricingCards';
 import TrustBar from '@/components/home/TrustBar';
-import GrowthPaths from '@/components/home/GrowthPaths';
+
 import WhyYfy from '@/components/home/WhyYfy';
 import FeaturesSnapshot from '@/components/home/FeaturesSnapshot';
 import ComplianceUSP from '@/components/home/ComplianceUSP';
@@ -21,8 +22,9 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <PricingCards />
       <TrustBar />
-      <GrowthPaths />
+
       <ComplianceUSP />
       <WhyYfy />
       <FeaturesSnapshot />

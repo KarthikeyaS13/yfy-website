@@ -15,7 +15,8 @@ import {
   Smartphone, 
   Lock,
   Presentation,
-  BarChart3
+  BarChart3,
+  ArrowRight
 } from 'lucide-react';
 import styles from './platform.module.css';
 
@@ -144,10 +145,10 @@ export default function PlatformOverviewPage() {
         <p>Join over 2,000+ Indian companies running compliant, automated payroll on yfy.ai.</p>
         <div className={styles.ctaButtons}>
           <Link href="/platform/demo" className={styles.primaryBtn}>
-            👉 Request a Demo
+            Request a Demo <ArrowRight size={20} />
           </Link>
           <Link href="/platform/roi" className={styles.secondaryBtn}>
-            👉 Calculate ROI
+            Calculate ROI <ArrowRight size={20} />
           </Link>
         </div>
       </section>

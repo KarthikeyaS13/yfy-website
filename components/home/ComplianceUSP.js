@@ -6,7 +6,7 @@ const items = [
   {
     icon: <Scale size={40} strokeWidth={1.5} />,
     title: 'Labour Code Readiness',
-    desc: 'Fully aligned with the 4 new codes — Wages, Industrial Relations, Social Security & OSH. Auto-updates when regulations change.',
+    desc: 'Fully aligned with the 4 new codes: Wages, Industrial Relations, Social Security & OSH. Auto-updates when regulations change.',
     tag: 'Labour Codes 2020',
     tagColor: 'gold',
   },
@@ -27,7 +27,7 @@ const items = [
   {
     icon: <ClipboardList size={40} strokeWidth={1.5} />,
     title: 'Statutory Filings Automation',
-    desc: 'PF ECR, ESIC returns, TDS challans (Form 24Q), Professional Tax — filed on time, every time.',
+    desc: 'PF ECR, ESIC returns, TDS challans (Form 24Q), Professional Tax, filed on time, every time.',
     tag: 'Zero Penalties',
     tagColor: 'green',
   },
@@ -41,7 +41,7 @@ const items = [
   {
     icon: <Search size={40} strokeWidth={1.5} />,
     title: 'Audit-Ready Reports',
-    desc: 'Complete audit trails, statutory registers, and compliance reports — accessible in one click for any period.',
+    desc: 'Complete audit trails, statutory registers, and compliance reports, accessible in one click for any period.',
     tag: 'Audit Ready',
     tagColor: 'silver',
   },
@@ -59,7 +59,7 @@ export default function ComplianceUSP() {
             <span className="text-gradient">Designed for Indian Regulations</span>
           </h2>
           <p>
-            The cost of inaction is too high. <b>yfy®</b> serves as your Active Compliance Shield—helping you avoid statutory penalties, eliminate operational blind spots and protect your brand reputation across every Indian state.
+            The cost of inaction is too high. <b>yfy®</b> serves as your Active Compliance Shield, helping you avoid statutory penalties, eliminate operational blind spots and protect your brand reputation across every Indian state.
           </p>
         </div>
 

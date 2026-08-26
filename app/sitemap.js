@@ -9,7 +9,7 @@ export default async function sitemap() {
     '/platform/roi',
     '/resources/compliance-calendar',
     '/blog',
-    '/pricing',
+
     '/contact'
   ].map((route) => ({
     url: `${baseUrl}${route}`,

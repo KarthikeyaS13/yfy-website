@@ -31,7 +31,7 @@ const partners = [
     icon: <UserPlus size={32} />,
     benefit: 'Recurring Revenue',
     headline: 'Go Beyond Hiring Services',
-    description: 'Manage hiring, onboarding, and payroll — all in one platform.',
+    description: 'Manage hiring, onboarding, and payroll, all in one platform.',
     points: ['Built-in ATS', 'Multi-client pipelines', 'Recurring revenue'],
     cta: 'Explore Program',
     color: 'var(--accent-green)'

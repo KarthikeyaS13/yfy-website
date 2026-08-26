@@ -1,0 +1,310 @@
+.aboutPage {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Gradients */
+.aboutPage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 6rem;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.heroSubtitle {
+  display: inline-block;
+  color: var(--primary, #8b5cf6);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 20px;
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #fff, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroDescription {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary, #a1a1aa);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Mission Section */
+.missionSection {
+  max-width: 900px;
+  margin: 0 auto 6rem;
+  padding: 0 1.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.missionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.missionText {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary, #a1a1aa);
+}
+
+/* Workflow Grid Section */
+.workflowSection {
+  max-width: 1200px;
+  margin: 0 auto 6rem;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.workflowHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.workflowTitle {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(39, 39, 42, 0.3);
+  border: 1px solid var(--border-light, #27272a);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary, #8b5cf6), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(39, 39, 42, 0.5);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary, #8b5cf6);
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary, #a1a1aa);
+}
+
+/* Content Blocks (Why yfy & Innovation) */
+.contentSection {
+  max-width: 1000px;
+  margin: 0 auto 6rem;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.contentBlock {
+  background: rgba(39, 39, 42, 0.2);
+  border: 1px solid var(--border-light, #27272a);
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+
+.contentTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.contentText {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text-secondary, #a1a1aa);
+}
+
+.contentText p {
+  margin-bottom: 1.5rem;
+}
+
+.contentText p:last-child {
+  margin-bottom: 0;
+}
+
+/* RekrutIQ Section */
+.rekrutIQSection {
+  max-width: 900px;
+  margin: 0 auto 6rem;
+  padding: 4rem 3rem;
+  text-align: center;
+  background: linear-gradient(145deg, rgba(139, 92, 246, 0.1) 0%, rgba(39, 39, 42, 0.4) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.rekrutIQTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.rekrutIQTitle span {
+  color: var(--primary, #8b5cf6);
+}
+
+.rekrutIQText {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary, #a1a1aa);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* CTA Section */
+.ctaSection {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  border-top: 1px solid var(--border-light, #27272a);
+  position: relative;
+  z-index: 1;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.ctaDescription {
+  font-size: 1.125rem;
+  color: var(--text-secondary, #a1a1aa);
+  margin-bottom: 2.5rem;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--primary, #8b5cf6);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.primaryButton:hover {
+  background-color: var(--primary-hover, #7c3aed);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+  .contentSection {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .rekrutIQSection {
+    padding: 3rem 1.5rem;
+  }
+  
+  .workflowTitle, .ctaTitle {
+    font-size: 2rem;
+  }
+}

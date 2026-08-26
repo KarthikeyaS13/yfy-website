@@ -5,7 +5,23 @@
   align-items: center;
   padding: 8rem 0 5rem;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 30%, #7A25B8 0%, #6B1FA2 25%, #4A1070 55%, #0E0618 100%);
+  background-color: var(--bg-base);
+  /* Dark mesh gradient with subtle purple glows */
+  background-image: 
+    radial-gradient(ellipse at 50% -20%, rgba(155, 61, 216, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 10% 40%, rgba(122, 37, 184, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 60%, rgba(74, 16, 112, 0.1) 0%, transparent 50%);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* Crisp top highlight and soft glossy reflection */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  background: radial-gradient(100% 50% at 50% 0%, rgba(192, 126, 240, 0.08) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .orbTop {
@@ -121,22 +137,21 @@
 }
 
 .pill {
-  padding: 0.3rem 0.875rem;
-  background: rgba(107, 31, 162, 0.2);
-  border: 1px solid rgba(155, 61, 216, 0.4);
+  padding: 0.2rem 0.75rem;
+  background: rgba(107, 31, 162, 0.05);
+  border: 1px solid rgba(155, 61, 216, 0.15);
   border-radius: 9999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #C07EF0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(192, 126, 240, 0.7);
   letter-spacing: 0.02em;
   transition: all 0.2s ease;
 }
 
 .pill:hover {
-  background: rgba(107, 31, 162, 0.4);
-  border-color: rgba(192, 126, 240, 0.7);
-  color: #F0E8FF;
-  transform: translateY(-2px);
+  background: rgba(107, 31, 162, 0.15);
+  border-color: rgba(192, 126, 240, 0.3);
+  color: rgba(192, 126, 240, 1);
 }
 
 .ctas {
@@ -248,7 +263,7 @@
   padding: 0 5vw;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.1;
+  opacity: 0.04;
 }
 
 .bgEntity {
@@ -318,6 +333,8 @@
   justify-content: center;
   gap: 80px;
   margin: 0 4vw;
+  -webkit-mask-image: linear-gradient(to right, black 0%, black 15%, transparent 25%, transparent 75%, black 85%, black 100%);
+  mask-image: linear-gradient(to right, black 0%, black 15%, transparent 25%, transparent 75%, black 85%, black 100%);
 }
 
 .trackWrapper {

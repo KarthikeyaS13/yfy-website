@@ -122,7 +122,7 @@ export default function HeroSection() {
 
         {/* CTA Buttons */}
         <div className={styles.ctas}>
-          <a href="/platform/demo" className="btn btn-primary btn-lg" id="hero-book-demo">
+          <a href="/platform/demo" className="btn btn-accent btn-lg glossy" id="hero-book-demo">
             Request Enterprise Demo
           </a>
           <a href="/platform" className="btn btn-outline btn-lg" id="hero-enterprise">
