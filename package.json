@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@svg-maps/india": "^2.0.0",
-    "better-sqlite3": "^12.11.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
     "framer-motion": "^12.43.0",
     "gray-matter": "^4.0.3",
     "html2canvas": "^1.4.1",

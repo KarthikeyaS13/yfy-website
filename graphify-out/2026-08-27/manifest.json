@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   "app/page.js": {
-    "mtime": 1787749161.4836907,
-    "seen": 1787815998.629327,
-    "ast_hash": "abb1615261a2c151154b377d8f255d4f",
+    "mtime": 1787662310.4278326,
+    "seen": 1787733975.4548268,
+    "ast_hash": "e3508828e5126cc23a0e07985a207221",
     "semantic_hash": ""
   },
   "app/partners/[slug]/page.js": {
@@ -66,21 +66,21 @@
     "semantic_hash": ""
   },
   "app/platform/demo/page.js": {
-    "mtime": 1787814874.3880787,
-    "seen": 1787815998.6293342,
-    "ast_hash": "663383bb70186aa7cee125d7fe546620",
+    "mtime": 1787744089.9740005,
+    "seen": 1787745429.453879,
+    "ast_hash": "7a35d21b7b43ef1f03948203775349dd",
     "semantic_hash": ""
   },
   "app/platform/employeelifecycle/page.js": {
-    "mtime": 1787749021.27772,
-    "seen": 1787815998.6293364,
-    "ast_hash": "017838380382585f1b3859ced551ad83",
+    "mtime": 1787575068.3477166,
+    "seen": 1787637660.2960021,
+    "ast_hash": "cdd7a92facdea927b0f10f0b4aa1c690",
     "semantic_hash": ""
   },
   "app/platform/page.js": {
-    "mtime": 1787749015.2011564,
-    "seen": 1787815998.6293383,
-    "ast_hash": "efc759a24ce3568b99dc58dce01077f4",
+    "mtime": 1787565171.6824555,
+    "seen": 1787637660.2960072,
+    "ast_hash": "d576d408960c4e3e8e0dcb93f86f5a42",
     "semantic_hash": ""
   },
   "app/platform/roi/page.js": {
@@ -180,9 +180,9 @@
     "semantic_hash": ""
   },
   "components/home/ComplianceUSP.js": {
-    "mtime": 1787748933.4760604,
-    "seen": 1787815998.6293845,
-    "ast_hash": "70cee20d8e79bd0fbdf4eff8229914c8",
+    "mtime": 1787570378.4720354,
+    "seen": 1787637660.2961118,
+    "ast_hash": "9d9e99203a3ff788752f48220e1bd688",
     "semantic_hash": ""
   },
   "components/home/FeaturesSnapshot.js": {
@@ -198,9 +198,9 @@
     "semantic_hash": ""
   },
   "components/home/HeroSection.js": {
-    "mtime": 1787749212.2709951,
-    "seen": 1787815998.6293917,
-    "ast_hash": "829a6f487fef6f4519612d2c228d9bb3",
+    "mtime": 1787653533.4187212,
+    "seen": 1787733975.4549499,
+    "ast_hash": "576b3e83979b9ba35f035b16dc1e31c0",
     "semantic_hash": ""
   },
   "components/home/IntegrationsStrip.js": {
@@ -228,9 +228,9 @@
     "semantic_hash": ""
   },
   "components/home/TrustBar.js": {
-    "mtime": 1787749150.2170827,
-    "seen": 1787815998.6294048,
-    "ast_hash": "ec93105e9514b13f84712ce57ca17b2f",
+    "mtime": 1787576353.6769774,
+    "seen": 1787637660.2961648,
+    "ast_hash": "a5a32aa0b5b15f1f22b9a72573aca664",
     "semantic_hash": ""
   },
   "components/home/WhyYfy.js": {
@@ -348,9 +348,9 @@
     "semantic_hash": ""
   },
   "data/productsData.js": {
-    "mtime": 1787748931.5107467,
-    "seen": 1787815998.629455,
-    "ast_hash": "1706da79d3563f5af27c327c505f5e90",
+    "mtime": 1785845161.0,
+    "seen": 1787637660.2962787,
+    "ast_hash": "c0fa3721290cdbb8f4a81ca406aa9fbd",
     "semantic_hash": ""
   },
   "eslint.config.mjs": {
@@ -372,15 +372,15 @@
     "semantic_hash": ""
   },
   "next.config.mjs": {
-    "mtime": 1787809651.5825367,
-    "seen": 1787815998.6294668,
-    "ast_hash": "32e244d9e8fd3908d29c49a924992b26",
+    "mtime": 1787652797.659335,
+    "seen": 1787733975.4550827,
+    "ast_hash": "75be17ef3e833798acd24a379c48dd09",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787808013.1284666,
-    "seen": 1787815998.629469,
-    "ast_hash": "fec7a5f2251d865b76406136e1c31ab7",
+    "mtime": 1787744075.3671339,
+    "seen": 1787745429.454033,
+    "ast_hash": "e8f8e0de5d672b3e28adc60affa737dd",
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
@@ -522,15 +522,15 @@
     "semantic_hash": ""
   },
   "app/case-studies/page.js": {
-    "mtime": 1787748719.2443306,
-    "seen": 1787815998.629318,
-    "ast_hash": "b6589a8b21f54721fe14526b3dd22fe6",
+    "mtime": 1787650403.768774,
+    "seen": 1787733975.4548082,
+    "ast_hash": "1c6a129e3d89fb69667767f3fcc8cab8",
     "semantic_hash": ""
   },
   "app/community/page.js": {
-    "mtime": 1787748721.2611294,
-    "seen": 1787815998.62932,
-    "ast_hash": "80aecfb6e465058db9ded416524032fe",
+    "mtime": 1787650515.1446993,
+    "seen": 1787733975.4548128,
+    "ast_hash": "031ae8de6158a6bc6416d9f9581ada0d",
     "semantic_hash": ""
   },
   "app/security/page.js": {
@@ -546,9 +546,9 @@
     "semantic_hash": ""
   },
   "components/home/PricingCards.js": {
-    "mtime": 1787747875.5089967,
-    "seen": 1787815998.6293979,
-    "ast_hash": "9bf0985b331caa1f9cd13bbbc4d958fa",
+    "mtime": 1787734337.7488744,
+    "seen": 1787745429.4539497,
+    "ast_hash": "35ead2e8f9e7661cc7c9b7fe2741db26",
     "semantic_hash": ""
   },
   "data/caseStudiesData.js": {
@@ -564,39 +564,21 @@
     "semantic_hash": ""
   },
   "app/api/demo/route.js": {
-    "mtime": 1787815842.299018,
-    "seen": 1787815998.6293044,
-    "ast_hash": "139c9db39c81a0e52f1399116362d92c",
+    "mtime": 1787743998.9798043,
+    "seen": 1787745429.4538453,
+    "ast_hash": "af4567b5c6c750775f05d2e6e6fdcdae",
     "semantic_hash": ""
   },
   "lib/db.js": {
-    "mtime": 1787814579.508757,
-    "seen": 1787815998.6294625,
-    "ast_hash": "2932e2caec97b84fafb7a7b92ed52b9f",
+    "mtime": 1787744884.3116877,
+    "seen": 1787745429.4540248,
+    "ast_hash": "0d6edc68f009109ef08c24d6a584560d",
     "semantic_hash": ""
   },
   "scripts/seed-db.js": {
     "mtime": 1787743894.7036393,
     "seen": 1787745429.4540358,
     "ast_hash": "88b7d2cd6a5e540a1af5a4b3fad87a61",
-    "semantic_hash": ""
-  },
-  "reset-slots.js": {
-    "mtime": 1787815102.8420455,
-    "seen": 1787815998.6294718,
-    "ast_hash": "4f1406a51ac2a156df44ae2903000f9c",
-    "semantic_hash": ""
-  },
-  "test-smtp.js": {
-    "mtime": 1787814152.3405645,
-    "seen": 1787815998.6294763,
-    "ast_hash": "a065eabf294ea2335178c2fc4f70334a",
-    "semantic_hash": ""
-  },
-  "update-db.js": {
-    "mtime": 1787814465.1942112,
-    "seen": 1787815998.6294785,
-    "ast_hash": "4ceb5760504b49f5fb201d6e739fb0bf",
     "semantic_hash": ""
   }
 }

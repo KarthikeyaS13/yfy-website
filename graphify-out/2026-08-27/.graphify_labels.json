@@ -33,14 +33,9 @@
   "31": "eslint.config.mjs",
   "32": "next.config.mjs",
   "33": "CLAUDE.md",
-  "34": "update-db.js",
-  "35": "case-studies/page.js",
-  "36": "test-smtp.js",
   "37": "case-studies/[slug]/page.js",
   "38": "community/page.js",
   "39": "about/page.js",
   "40": "security/page.js",
-  "41": "terms/page.js",
-  "42": "reset-slots.js",
-  "43": "next"
+  "41": "terms/page.js"
 }

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import db from '../../../../lib/db';
+import getDb from '../../../../lib/db';
 
 export async function POST(request) {
   try {
@@ -10,17 +10,16 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
-    const stmt = db.prepare(`
+    const db = await getDb();
+    await db.run(`
       INSERT INTO compliance_subscriptions (name, email, company, headcount, state)
-      VALUES (@name, @email, @company, @headcount, @state)
-    `);
-
-    stmt.run({
-      name: name || null,
-      email,
-      company: company || null,
-      headcount: headcount || null,
-      state: state || null
+      VALUES (:name, :email, :company, :headcount, :state)
+    `, {
+      ':name': name || null,
+      ':email': email,
+      ':company': company || null,
+      ':headcount': headcount || null,
+      ':state': state || null
     });
 
     return NextResponse.json({ success: true, message: 'Subscription saved successfully.' });

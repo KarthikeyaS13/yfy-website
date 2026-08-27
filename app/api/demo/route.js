@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import db from '../../../lib/db';
+import getDb from '../../../lib/db';
 
 function getEndTimeStr(timeStr) {
   if (!timeStr) return 'N/A';
@@ -44,8 +44,8 @@ function getICSDate(dateStr, timeStr, addMinutes = 0) {
 
 export async function GET() {
   try {
-    const stmt = db.prepare('SELECT selected_date, selected_slot FROM demo_requests WHERE selected_date IS NOT NULL AND selected_slot IS NOT NULL');
-    const bookings = stmt.all();
+    const db = await getDb();
+    const bookings = await db.all('SELECT selected_date, selected_slot FROM demo_requests WHERE selected_date IS NOT NULL AND selected_slot IS NOT NULL');
 
     // Map it to camelCase for the frontend
     const mappedBookings = bookings.map(b => ({
@@ -82,21 +82,21 @@ export async function POST(request) {
     }
 
     try {
-      const stmt = db.prepare(`
+      const db = await getDb();
+      await db.run(`
         INSERT INTO demo_requests (first_name, last_name, work_email, company, employee_count, phone, primary_interest, message_details, selected_date, selected_slot)
-        VALUES (@firstName, @lastName, @workEmail, @company, @employeeCount, @phone, @primaryInterest, @messageDetails, @selectedDate, @selectedSlot)
-      `);
-      stmt.run({
-        firstName,
-        lastName,
-        workEmail,
-        company,
-        employeeCount,
-        phone,
-        primaryInterest: primaryInterest || null,
-        messageDetails: messageDetails || null,
-        selectedDate: formattedTargetDate,
-        selectedSlot
+        VALUES (:firstName, :lastName, :workEmail, :company, :employeeCount, :phone, :primaryInterest, :messageDetails, :selectedDate, :selectedSlot)
+      `, {
+        ':firstName': firstName,
+        ':lastName': lastName,
+        ':workEmail': workEmail,
+        ':company': company,
+        ':employeeCount': employeeCount,
+        ':phone': phone,
+        ':primaryInterest': primaryInterest || null,
+        ':messageDetails': messageDetails || null,
+        ':selectedDate': formattedTargetDate,
+        ':selectedSlot': selectedSlot
       });
     } catch (dbError) {
       console.error("Failed to save demo request to SQLite", dbError);

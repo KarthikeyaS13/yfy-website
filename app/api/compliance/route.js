@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
-import db from '../../../lib/db';
+import getDb from '../../../lib/db';
 
 export async function GET() {
   try {
-    const stmt = db.prepare('SELECT * FROM compliance_events');
-    const events = stmt.all();
+    const db = await getDb();
+    const events = await db.all('SELECT * FROM compliance_events');
     
     // SQLite returns column names exactly as they are in DB (due_date_day).
     // The frontend expects `dueDateDay`. Let's map it.
@@ -37,25 +37,34 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Payload must be an array of compliance dates.' }, { status: 400 });
     }
 
-    const insert = db.prepare(`
-      INSERT INTO compliance_events (id, title, type, state, due_date_day, description)
-      VALUES (@id, @title, @type, @state, @dueDateDay, @description)
-      ON CONFLICT(id) DO UPDATE SET
-        title = excluded.title,
-        type = excluded.type,
-        state = excluded.state,
-        due_date_day = excluded.due_date_day,
-        description = excluded.description
-    `);
-
-    // In a real scenario we might want to clear old ones, but for now we upsert.
-    const insertMany = db.transaction((eventsArray) => {
-      for (const event of eventsArray) {
-        insert.run(event);
+    const db = await getDb();
+    
+    await db.run('BEGIN TRANSACTION');
+    try {
+      for (const event of payload) {
+        await db.run(`
+          INSERT INTO compliance_events (id, title, type, state, due_date_day, description)
+          VALUES (:id, :title, :type, :state, :dueDateDay, :description)
+          ON CONFLICT(id) DO UPDATE SET
+            title = excluded.title,
+            type = excluded.type,
+            state = excluded.state,
+            due_date_day = excluded.due_date_day,
+            description = excluded.description
+        `, {
+          ':id': event.id,
+          ':title': event.title,
+          ':type': event.type,
+          ':state': event.state,
+          ':dueDateDay': event.dueDateDay,
+          ':description': event.description
+        });
       }
-    });
-
-    insertMany(payload);
+      await db.run('COMMIT');
+    } catch (e) {
+      await db.run('ROLLBACK');
+      throw e;
+    }
 
     return NextResponse.json({ success: true, message: 'Compliance data updated successfully.' });
   } catch (error) {
