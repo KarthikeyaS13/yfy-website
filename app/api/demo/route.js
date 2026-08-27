@@ -118,9 +118,14 @@ export async function POST(request) {
         }
       });
 
+      const senderEmail = process.env.SMTP_USER || 'info@yfy.ai';
+      
       const teamMailOptions = {
-        from: process.env.SMTP_FROM || '"YFY" <info@yfy.ai>',
-        to: process.env.SMTP_USER || 'info@yfy.ai',
+        from: {
+          name: 'YFY',
+          address: senderEmail
+        },
+        to: senderEmail,
         subject: `New Demo Request: ${company}`,
         html: `
           <h2>New Demo Request</h2>
@@ -137,7 +142,10 @@ export async function POST(request) {
       };
 
       let userMailOptions = {
-        from: process.env.SMTP_FROM || '"YFY" <info@yfy.ai>',
+        from: {
+          name: 'YFY',
+          address: senderEmail
+        },
         to: workEmail,
         subject: 'Invitation: Consultation Session - YFY',
         html: `

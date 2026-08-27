@@ -564,9 +564,9 @@
     "semantic_hash": ""
   },
   "app/api/demo/route.js": {
-    "mtime": 1787819168.9555314,
-    "seen": 1787819817.1111565,
-    "ast_hash": "f3a37fa584493e777d466c5f7cbb5662",
+    "mtime": 1787820433.8098485,
+    "seen": 1787820534.386061,
+    "ast_hash": "9475e5bb09b6d1023b067616c4d64d66",
     "semantic_hash": ""
   },
   "lib/db.js": {

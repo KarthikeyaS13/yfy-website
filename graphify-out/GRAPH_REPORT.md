@@ -1,16 +1,16 @@
 # Graph Report - yfy-1  (2026-08-27)
 
 ## Corpus Check
-- 86 files · ~239,414 words
+- 86 files · ~239,442 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 276 nodes · 289 edges · 43 communities (23 shown, 20 thin omitted)
+- 276 nodes · 288 edges · 43 communities (23 shown, 20 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `14ff35b3`
+- Built from commit: `f98b1b26`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -54,10 +54,10 @@
 - reset-slots.js
 
 ## God Nodes (most connected - your core abstractions)
-1. `getDb()` - 11 edges
+1. `getDb()` - 10 edges
 2. `getAllPosts()` - 7 edges
-3. `scripts` - 5 edges
-4. `The 4 Labour Codes at a Glance` - 5 edges
+3. `The 4 Labour Codes at a Glance` - 5 edges
+4. `scripts` - 5 edges
 5. `POST()` - 4 edges
 6. `getPostBySlug()` - 4 edges
 7. `productsData` - 4 edges
@@ -67,13 +67,13 @@
 
 ## Surprising Connections (you probably didn't know these)
 - `GET()` --calls--> `getDb()`  [EXTRACTED]
+  app/api/demo/route.js → lib/db.js
+- `GET()` --calls--> `getDb()`  [EXTRACTED]
   app/api/compliance/route.js → lib/db.js
 - `POST()` --calls--> `getDb()`  [EXTRACTED]
   app/api/compliance/route.js → lib/db.js
 - `POST()` --calls--> `getDb()`  [EXTRACTED]
   app/api/compliance/subscribe/route.js → lib/db.js
-- `GET()` --calls--> `getDb()`  [EXTRACTED]
-  app/api/demo/route.js → lib/db.js
 - `seed()` --calls--> `getDb()`  [EXTRACTED]
   scripts/seed-db.js → lib/db.js
 
@@ -131,7 +131,7 @@ Cohesion: 0.40
 Nodes (4): 1. Human Error & Compliance Penalties, 2. Resource Drain, Calculating Your Automation ROI, The Hidden Costs of Manual Payroll
 
 ### Community 13 - "getDb"
-Cohesion: 0.25
+Cohesion: 0.24
 Nodes (10): GET(), POST(), POST(), GET(), getEndTimeStr(), getICSDate(), POST(), dbPath (+2 more)
 
 ### Community 14 - "README.md"
@@ -151,7 +151,7 @@ Cohesion: 0.50
 Nodes (3): Database, db, path
 
 ## Knowledge Gaps
-- **83 isolated node(s):** `dbPath`, `name`, `version`, `private`, `dev` (+78 more)
+- **83 isolated node(s):** `Testimonials`, `metadata`, `features`, `integrations`, `certs` (+78 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **20 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -160,7 +160,7 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **What connects `dbPath`, `name`, `version` to the rest of the system?**
+- **What connects `Testimonials`, `metadata`, `features` to the rest of the system?**
   _83 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `app/page.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07977207977207977 - nodes in this community are weakly interconnected._
