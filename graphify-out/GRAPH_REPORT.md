@@ -1,16 +1,16 @@
 # Graph Report - yfy-1  (2026-08-27)
 
 ## Corpus Check
-- 86 files · ~239,318 words
+- 86 files · ~239,414 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 276 nodes · 282 edges · 44 communities (24 shown, 20 thin omitted)
+- 276 nodes · 289 edges · 43 communities (23 shown, 20 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `adf81df6`
+- Built from commit: `14ff35b3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -28,7 +28,7 @@
 - The 4 Labour Codes at a Glance
 - check_responsive.js
 - The Hidden Costs of Manual Payroll
-- db.js
+- getDb
 - README.md
 - integrations/page.js
 - employeelifecycle/page.js
@@ -54,33 +54,33 @@
 - reset-slots.js
 
 ## God Nodes (most connected - your core abstractions)
-1. `getAllPosts()` - 7 edges
-2. `db` - 5 edges
+1. `getDb()` - 11 edges
+2. `getAllPosts()` - 7 edges
 3. `scripts` - 5 edges
 4. `The 4 Labour Codes at a Glance` - 5 edges
-5. `productsData` - 4 edges
+5. `POST()` - 4 edges
 6. `getPostBySlug()` - 4 edges
-7. `POST()` - 3 edges
+7. `productsData` - 4 edges
 8. `DemoPage()` - 3 edges
 9. `Navbar()` - 3 edges
 10. `ROICalculator()` - 3 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `BlogPage()` --calls--> `getAllPosts()`  [EXTRACTED]
-  app/blog/page.js → lib/markdown.js
-- `generateStaticParams()` --calls--> `getAllPosts()`  [EXTRACTED]
-  app/blog/[slug]/page.js → lib/markdown.js
-- `sitemap()` --calls--> `getAllPosts()`  [EXTRACTED]
-  app/sitemap.js → lib/markdown.js
-- `BlogPost()` --calls--> `getPostBySlug()`  [EXTRACTED]
-  app/blog/[slug]/page.js → lib/markdown.js
-- `generateMetadata()` --calls--> `getPostBySlug()`  [EXTRACTED]
-  app/blog/[slug]/page.js → lib/markdown.js
+- `GET()` --calls--> `getDb()`  [EXTRACTED]
+  app/api/compliance/route.js → lib/db.js
+- `POST()` --calls--> `getDb()`  [EXTRACTED]
+  app/api/compliance/route.js → lib/db.js
+- `POST()` --calls--> `getDb()`  [EXTRACTED]
+  app/api/compliance/subscribe/route.js → lib/db.js
+- `GET()` --calls--> `getDb()`  [EXTRACTED]
+  app/api/demo/route.js → lib/db.js
+- `seed()` --calls--> `getDb()`  [EXTRACTED]
+  scripts/seed-db.js → lib/db.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (44 total, 20 thin omitted)
+## Communities (43 total, 20 thin omitted)
 
 ### Community 0 - "app/page.js"
 Cohesion: 0.08
@@ -91,8 +91,8 @@ Cohesion: 0.13
 Nodes (12): metadata, HowItWorks(), steps, InteractiveEntry(), roles, PartnersCTA(), PartnersHero(), PartnersTrust() (+4 more)
 
 ### Community 2 - "dependencies"
-Cohesion: 0.08
-Nodes (25): better-sqlite3, framer-motion, gray-matter, html2canvas, jspdf, lucide-react, nodemailer, dependencies (+17 more)
+Cohesion: 0.07
+Nodes (27): framer-motion, gray-matter, html2canvas, jspdf, lucide-react, next, nodemailer, dependencies (+19 more)
 
 ### Community 3 - "layout.js"
 Cohesion: 0.14
@@ -130,9 +130,9 @@ Nodes (4): { execSync }, files, fs, path
 Cohesion: 0.40
 Nodes (4): 1. Human Error & Compliance Penalties, 2. Resource Drain, Calculating Your Automation ROI, The Hidden Costs of Manual Payroll
 
-### Community 13 - "db.js"
-Cohesion: 0.17
-Nodes (5): getEndTimeStr(), getICSDate(), POST(), db, dbPath
+### Community 13 - "getDb"
+Cohesion: 0.25
+Nodes (10): GET(), POST(), POST(), GET(), getEndTimeStr(), getICSDate(), POST(), dbPath (+2 more)
 
 ### Community 14 - "README.md"
 Cohesion: 0.50
@@ -151,7 +151,7 @@ Cohesion: 0.50
 Nodes (3): Database, db, path
 
 ## Knowledge Gaps
-- **82 isolated node(s):** `metadata`, `metadata`, `metadata`, `countries`, `lifecycleStages` (+77 more)
+- **83 isolated node(s):** `dbPath`, `name`, `version`, `private`, `dev` (+78 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **20 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -159,15 +159,15 @@ Nodes (3): Database, db, path
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **What connects `metadata`, `metadata`, `metadata` to the rest of the system?**
-  _82 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **What connects `dbPath`, `name`, `version` to the rest of the system?**
+  _83 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `app/page.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07977207977207977 - nodes in this community are weakly interconnected._
 - **Should `partners/page.js` be split into smaller, more focused modules?**
   _Cohesion score 0.12857142857142856 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `layout.js` be split into smaller, more focused modules?**
   _Cohesion score 0.13970588235294118 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**

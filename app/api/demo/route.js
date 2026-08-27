@@ -113,6 +113,9 @@ export async function POST(request) {
           user: process.env.SMTP_USER || 'info@yfy.ai',
           pass: process.env.SMTP_PASS || 'Yfyapp@013',
         },
+        tls: {
+          rejectUnauthorized: false
+        }
       });
 
       const teamMailOptions = {
@@ -202,9 +205,15 @@ END:VCALENDAR`;
     } catch (emailError) {
       // Log email error, but DO NOT fail the request since it's stored in the database!
       console.error('Error sending demo email, but request was saved in DB:', emailError);
+      return NextResponse.json({ 
+        success: true, 
+        emailSent: false, 
+        emailError: emailError.message || String(emailError),
+        message: 'Request saved in database, but email failed to send.' 
+      });
     }
 
-    return NextResponse.json({ success: true, message: 'Request processed successfully.' });
+    return NextResponse.json({ success: true, emailSent: true, message: 'Request processed successfully.' });
   } catch (error) {
     console.error('Unexpected error in Demo API:', error);
     return NextResponse.json({ error: 'Unexpected error occurred.' }, { status: 500 });

@@ -225,7 +225,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "get()",
       "source_file": "app/api/compliance/route.js",
@@ -237,7 +237,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "post()",
       "source_file": "app/api/compliance/route.js",
@@ -249,7 +249,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "post()",
       "source_file": "app/api/compliance/subscribe/route.js",
@@ -261,7 +261,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "get()",
       "source_file": "app/api/demo/route.js",
@@ -273,7 +273,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "getendtimestr()",
       "source_file": "app/api/demo/route.js",
@@ -285,7 +285,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "geticsdate()",
       "source_file": "app/api/demo/route.js",
@@ -297,21 +297,21 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "post()",
       "source_file": "app/api/demo/route.js",
       "source_location": "L63"
     },
     {
-      "id": "lib_db_initdb",
-      "label": "initDb()",
+      "id": "lib_db_getdb",
+      "label": "getDb()",
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
-      "norm_label": "initdb()",
+      "norm_label": "getdb()",
       "source_file": "lib/db.js",
       "source_location": "L12"
     },
@@ -321,7 +321,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "seed()",
       "source_file": "scripts/seed-db.js",
@@ -1547,7 +1547,7 @@
       "label": "compliance/route.js",
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "compliance/route.js",
       "source_file": "app/api/compliance/route.js",
@@ -1558,7 +1558,7 @@
       "label": "subscribe/route.js",
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "subscribe/route.js",
       "source_file": "app/api/compliance/subscribe/route.js",
@@ -1569,7 +1569,7 @@
       "label": "demo/route.js",
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "demo/route.js",
       "source_file": "app/api/demo/route.js",
@@ -1580,40 +1580,29 @@
       "label": "db.js",
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "db.js",
       "source_file": "lib/db.js",
       "source_location": "L1"
     },
     {
-      "id": "lib_db_db",
-      "label": "db",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "db.js",
-      "file_type": "code",
-      "norm_label": "db",
-      "source_file": "lib/db.js",
-      "source_location": "L8"
-    },
-    {
       "id": "lib_db_dbpath",
       "label": "dbPath",
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "dbpath",
       "source_file": "lib/db.js",
-      "source_location": "L5"
+      "source_location": "L7"
     },
     {
       "id": "scripts_seed_db",
       "label": "seed-db.js",
       "_origin": "ast",
       "community": 13,
-      "community_name": "db.js",
+      "community_name": "getDb",
       "file_type": "code",
       "norm_label": "seed-db.js",
       "source_file": "scripts/seed-db.js",
@@ -1789,17 +1778,6 @@
       "source_location": "L11"
     },
     {
-      "id": "package_dependencies_better_sqlite3",
-      "label": "better-sqlite3",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "better-sqlite3",
-      "source_file": "package.json",
-      "source_location": "L13"
-    },
-    {
       "id": "package_dependencies_framer_motion",
       "label": "framer-motion",
       "_origin": "ast",
@@ -1808,7 +1786,7 @@
       "file_type": "code",
       "norm_label": "framer-motion",
       "source_file": "package.json",
-      "source_location": "L14"
+      "source_location": "L15"
     },
     {
       "id": "package_dependencies_gray_matter",
@@ -1819,7 +1797,7 @@
       "file_type": "code",
       "norm_label": "gray-matter",
       "source_file": "package.json",
-      "source_location": "L15"
+      "source_location": "L16"
     },
     {
       "id": "package_dependencies_html2canvas",
@@ -1830,7 +1808,7 @@
       "file_type": "code",
       "norm_label": "html2canvas",
       "source_file": "package.json",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "package_dependencies_jspdf",
@@ -1841,7 +1819,7 @@
       "file_type": "code",
       "norm_label": "jspdf",
       "source_file": "package.json",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
       "id": "package_dependencies_lucide_react",
@@ -1852,7 +1830,7 @@
       "file_type": "code",
       "norm_label": "lucide-react",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L19"
     },
     {
       "id": "package_dependencies_next",
@@ -1863,7 +1841,7 @@
       "file_type": "code",
       "norm_label": "next",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L20"
     },
     {
       "id": "package_dependencies_nodemailer",
@@ -1874,7 +1852,7 @@
       "file_type": "code",
       "norm_label": "nodemailer",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L21"
     },
     {
       "id": "package_dependencies_react",
@@ -1885,7 +1863,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "package_dependencies_react_dom",
@@ -1896,7 +1874,7 @@
       "file_type": "code",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "package_dependencies_react_markdown",
@@ -1907,7 +1885,29 @@
       "file_type": "code",
       "norm_label": "react-markdown",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L24"
+    },
+    {
+      "id": "package_dependencies_sqlite",
+      "label": "sqlite",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "sqlite",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "package_dependencies_sqlite3",
+      "label": "sqlite3",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "sqlite3",
+      "source_file": "package.json",
+      "source_location": "L14"
     },
     {
       "id": "package_dependencies_svg_maps_india",
@@ -1921,17 +1921,6 @@
       "source_location": "L12"
     },
     {
-      "id": "better_sqlite3",
-      "label": "better-sqlite3",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "dependencies",
-      "file_type": "concept",
-      "norm_label": "better-sqlite3",
-      "source_file": "package.json",
-      "source_location": "L13"
-    },
-    {
       "id": "framer_motion",
       "label": "framer-motion",
       "_origin": "ast",
@@ -1940,7 +1929,7 @@
       "file_type": "concept",
       "norm_label": "framer-motion",
       "source_file": "package.json",
-      "source_location": "L14"
+      "source_location": "L15"
     },
     {
       "id": "gray_matter",
@@ -1951,7 +1940,7 @@
       "file_type": "concept",
       "norm_label": "gray-matter",
       "source_file": "package.json",
-      "source_location": "L15"
+      "source_location": "L16"
     },
     {
       "id": "html2canvas",
@@ -1962,7 +1951,7 @@
       "file_type": "concept",
       "norm_label": "html2canvas",
       "source_file": "package.json",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "jspdf",
@@ -1973,7 +1962,7 @@
       "file_type": "concept",
       "norm_label": "jspdf",
       "source_file": "package.json",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
       "id": "lucide_react",
@@ -1984,7 +1973,18 @@
       "file_type": "concept",
       "norm_label": "lucide-react",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L19"
+    },
+    {
+      "id": "next",
+      "label": "next",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "concept",
+      "norm_label": "next",
+      "source_file": "package.json",
+      "source_location": "L20"
     },
     {
       "id": "nodemailer",
@@ -1995,18 +1995,7 @@
       "file_type": "concept",
       "norm_label": "nodemailer",
       "source_file": "package.json",
-      "source_location": "L20"
-    },
-    {
-      "id": "package_json_next",
-      "label": "next",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "dependencies",
-      "file_type": "concept",
-      "norm_label": "next",
-      "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L21"
     },
     {
       "id": "react",
@@ -2017,7 +2006,7 @@
       "file_type": "concept",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "react_dom",
@@ -2028,7 +2017,7 @@
       "file_type": "concept",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "react_markdown",
@@ -2039,7 +2028,29 @@
       "file_type": "concept",
       "norm_label": "react-markdown",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L24"
+    },
+    {
+      "id": "sqlite",
+      "label": "sqlite",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "concept",
+      "norm_label": "sqlite",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "sqlite3",
+      "label": "sqlite3",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "concept",
+      "norm_label": "sqlite3",
+      "source_file": "package.json",
+      "source_location": "L14"
     },
     {
       "id": "svg_maps_india",
@@ -2637,7 +2648,7 @@
       "file_type": "code",
       "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "package_devdependencies_eslint",
@@ -2648,7 +2659,7 @@
       "file_type": "code",
       "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "package_devdependencies_eslint_config_next",
@@ -2659,7 +2670,7 @@
       "file_type": "code",
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "package_name",
@@ -2758,7 +2769,7 @@
       "file_type": "concept",
       "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "eslint_config_next",
@@ -2769,7 +2780,7 @@
       "file_type": "concept",
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "app_security_page",
@@ -2836,17 +2847,6 @@
       "norm_label": "db",
       "source_file": "reset-slots.js",
       "source_location": "L1"
-    },
-    {
-      "id": "next_next",
-      "label": "next",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "next",
-      "confidence": "EXTRACTED",
-      "file_type": "code",
-      "norm_label": "next",
-      "source_file": "next"
     },
     {
       "id": "app_blog_page",
@@ -3170,6 +3170,54 @@
   ],
   "links": [
     {
+      "source": "app_api_compliance_route_get",
+      "target": "lib_db_getdb",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/api/compliance/route.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_compliance_route_post",
+      "target": "lib_db_getdb",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/api/compliance/route.js",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_compliance_subscribe_route_post",
+      "target": "lib_db_getdb",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/api/compliance/subscribe/route.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_demo_route_get",
+      "target": "lib_db_getdb",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/api/demo/route.js",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
       "source": "app_api_demo_route_post",
       "target": "app_api_demo_route_getendtimestr",
       "relation": "calls",
@@ -3191,6 +3239,18 @@
       "context": "call",
       "source_file": "app/api/demo/route.js",
       "source_location": "L184",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_demo_route_post",
+      "target": "lib_db_getdb",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/api/demo/route.js",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -3290,6 +3350,18 @@
       "weight": 1.0
     },
     {
+      "source": "scripts_seed_db_seed",
+      "target": "lib_db_getdb",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/seed-db.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
       "source": "app_platform_demo_page_demopage",
       "target": "app_platform_demo_page_demopage_fetchbookings",
       "relation": "contains",
@@ -3303,7 +3375,7 @@
     },
     {
       "source": "app_api_compliance_route",
-      "target": "lib_db_db",
+      "target": "lib_db_getdb",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3315,7 +3387,7 @@
     },
     {
       "source": "app_api_compliance_subscribe_route",
-      "target": "lib_db_db",
+      "target": "lib_db_getdb",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3327,7 +3399,7 @@
     },
     {
       "source": "app_api_demo_route",
-      "target": "lib_db_db",
+      "target": "lib_db_getdb",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3722,18 +3794,6 @@
       "weight": 1.0
     },
     {
-      "source": "package_dependencies_better_sqlite3",
-      "target": "better_sqlite3",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
       "source": "package_dependencies_framer_motion",
       "target": "framer_motion",
       "relation": "imports",
@@ -3742,7 +3802,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -3754,7 +3814,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -3766,7 +3826,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -3778,7 +3838,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -3790,19 +3850,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
       "source": "package_dependencies_next",
-      "target": "package_json_next",
+      "target": "next",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -3814,7 +3874,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -3826,7 +3886,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -3838,7 +3898,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -3850,7 +3910,31 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies_sqlite",
+      "target": "sqlite",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies_sqlite3",
+      "target": "sqlite3",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -3874,7 +3958,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -3886,12 +3970,12 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
       "source": "scripts_seed_db",
-      "target": "lib_db_db",
+      "target": "lib_db_getdb",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5896,7 +5980,7 @@
     },
     {
       "source": "lib_db",
-      "target": "lib_db_initdb",
+      "target": "lib_db_getdb",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5913,18 +5997,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/db.js",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "lib_db",
-      "target": "lib_db_db",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/db.js",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -6023,7 +6096,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -6072,7 +6145,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_better_sqlite3",
+      "target": "package_dependencies_sqlite",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6083,7 +6156,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_framer_motion",
+      "target": "package_dependencies_sqlite3",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6094,7 +6167,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_gray_matter",
+      "target": "package_dependencies_framer_motion",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6105,7 +6178,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_html2canvas",
+      "target": "package_dependencies_gray_matter",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6116,7 +6189,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_jspdf",
+      "target": "package_dependencies_html2canvas",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6127,7 +6200,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_lucide_react",
+      "target": "package_dependencies_jspdf",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6138,7 +6211,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_next",
+      "target": "package_dependencies_lucide_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6149,7 +6222,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_nodemailer",
+      "target": "package_dependencies_next",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6160,7 +6233,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
+      "target": "package_dependencies_nodemailer",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6171,7 +6244,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
+      "target": "package_dependencies_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6182,13 +6255,24 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_markdown",
+      "target": "package_dependencies_react_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_markdown",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -6199,7 +6283,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -6210,7 +6294,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -6380,5 +6464,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "adf81df682281ccbe152821fdcef7fcf43737642"
+  "built_at_commit": "14ff35b3bd6e9d0a68efbf2fa527a1581769632c"
 }

@@ -12,7 +12,7 @@
   "10": "The 4 Labour Codes at a Glance",
   "11": "check_responsive.js",
   "12": "The Hidden Costs of Manual Payroll",
-  "13": "db.js",
+  "13": "getDb",
   "14": "README.md",
   "15": "integrations/page.js",
   "16": "employeelifecycle/page.js",
@@ -41,6 +41,5 @@
   "39": "about/page.js",
   "40": "security/page.js",
   "41": "terms/page.js",
-  "42": "reset-slots.js",
-  "43": "next"
+  "42": "reset-slots.js"
 }
