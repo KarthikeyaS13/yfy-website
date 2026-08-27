@@ -60,7 +60,7 @@ export default function PricingCards() {
   return (
     <section className={`section ${styles.pricingSection}`}>
       <div className="container">
-        <h2 className="sr-only">Three pricing tiers for ELHRMS: Multi-State Employer, Principal Employer, and Enterprise Group, segmented by compliance complexity rather than headcount.</h2>
+        <h2 className="sr-only">Pricing built around compliance complexity, not headcount.</h2>
         <div className={styles.grid}>
           {pricingTiers.map((tier, index) => {
             const Icon = tier.iconType === 'MapPin' ? MapPin : tier.iconType === 'ShieldCheck' ? ShieldCheck : Building2;

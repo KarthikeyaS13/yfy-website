@@ -12,9 +12,9 @@
     "semantic_hash": ""
   },
   "app/api/compliance/route.js": {
-    "mtime": 1775508801.0,
-    "seen": 1787637660.2959394,
-    "ast_hash": "137e425ba3e328560ef3383cc21b0120",
+    "mtime": 1787743944.1617687,
+    "seen": 1787745429.453838,
+    "ast_hash": "e7671f697191513344bba16f3a03ed50",
     "semantic_hash": ""
   },
   "app/api/partners/apply/route.js": {
@@ -66,9 +66,9 @@
     "semantic_hash": ""
   },
   "app/platform/demo/page.js": {
-    "mtime": 1787652236.4675465,
-    "seen": 1787733975.4548411,
-    "ast_hash": "4d2238973c69b5951cfd92acd46db3d1",
+    "mtime": 1787744089.9740005,
+    "seen": 1787745429.453879,
+    "ast_hash": "7a35d21b7b43ef1f03948203775349dd",
     "semantic_hash": ""
   },
   "app/platform/employeelifecycle/page.js": {
@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "app/resources/compliance-calendar/page.js": {
-    "mtime": 1785857317.0,
-    "seen": 1787637660.2960346,
-    "ast_hash": "6d86b6a4f62048a8879db63a33f545ab",
+    "mtime": 1787744888.367066,
+    "seen": 1787745429.4538977,
+    "ast_hash": "040c27e7af8b032a18651209917160f9",
     "semantic_hash": ""
   },
   "app/robots.js": {
@@ -378,9 +378,9 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787660506.8316681,
-    "seen": 1787733975.455087,
-    "ast_hash": "2434ca5f3053f1f2b10de597a95fb712",
+    "mtime": 1787744075.3671339,
+    "seen": 1787745429.454033,
+    "ast_hash": "e8f8e0de5d672b3e28adc60affa737dd",
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
@@ -546,8 +546,8 @@
     "semantic_hash": ""
   },
   "components/home/PricingCards.js": {
-    "mtime": 1787733281.0024796,
-    "seen": 1787733975.4549627,
+    "mtime": 1787734337.7488744,
+    "seen": 1787745429.4539497,
     "ast_hash": "35ead2e8f9e7661cc7c9b7fe2741db26",
     "semantic_hash": ""
   },
@@ -555,6 +555,30 @@
     "mtime": 1787649176.8390574,
     "seen": 1787733975.4550471,
     "ast_hash": "543a0a7856bb74298b83042e59ca46d1",
+    "semantic_hash": ""
+  },
+  "app/api/compliance/subscribe/route.js": {
+    "mtime": 1787744886.3221214,
+    "seen": 1787745429.4538422,
+    "ast_hash": "5c9581644043c940c974f4fb0d23c28d",
+    "semantic_hash": ""
+  },
+  "app/api/demo/route.js": {
+    "mtime": 1787743998.9798043,
+    "seen": 1787745429.4538453,
+    "ast_hash": "af4567b5c6c750775f05d2e6e6fdcdae",
+    "semantic_hash": ""
+  },
+  "lib/db.js": {
+    "mtime": 1787744884.3116877,
+    "seen": 1787745429.4540248,
+    "ast_hash": "0d6edc68f009109ef08c24d6a584560d",
+    "semantic_hash": ""
+  },
+  "scripts/seed-db.js": {
+    "mtime": 1787743894.7036393,
+    "seen": 1787745429.4540358,
+    "ast_hash": "88b7d2cd6a5e540a1af5a4b3fad87a61",
     "semantic_hash": ""
   }
 }

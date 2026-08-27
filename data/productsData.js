@@ -691,7 +691,7 @@ export const productsData = {
     slug: 'filing',
     title: 'Automated Statutory Returns & Filing Software',
     metaTitle: 'Statutory Returns & Filing Software | 1-Click PF & TDS Returns | yfy.ai',
-    metaDesc: 'Generate 100% accurate statutory return files in seconds. Automate PF ECR, ESIC, Form 24Q TDS quarterly returns, and PT filings with complete audit readiness.',
+    metaDesc: 'Generate 100% accurate statutory return files in seconds. Automate PF ECR, ESIC, Form 138Q TDS quarterly returns, and PT filings with complete audit readiness.',
     category: 'Compliance Intelligence',
     badge: '1-Click Returns • Easy Filing',
     headline: 'Generate Flawless Statutory Returns in a Single Click',
@@ -707,7 +707,7 @@ export const productsData = {
       desc: 'Bridge the gap between payroll processing and government portal submission with intelligent file validation that ensures success on the first upload.',
       highlights: [
         'Instant EPFO ECR Generation: Automatically format Electronic Challan-cum-Return files with exact wage calculations, absentee days, and statutory contribution capping.',
-        'Accurate Quarterly TDS Returns: Effortlessly compile Form 24Q quarterly tax returns with automatic challan matching, ready for smooth submission.',
+        'Accurate Quarterly TDS Returns: Effortlessly compile Form 138Q quarterly tax returns with automatic challan matching, ready for smooth submission.',
         'Pre-Upload Error Checking: The system automatically scans return files for missing employee UANs, incorrect tax identifiers, or formatting anomalies before you export.',
         'Organized Receipt Archiving: Keep all government payment receipts, challan copies, and transaction acknowledgment numbers archived securely in your cloud vault.'
       ]
@@ -727,7 +727,7 @@ export const productsData = {
       },
       {
         icon: 'TrendingUp',
-        title: 'Form 24Q & Form 16 Preparation',
+        title: 'Form 138Q & Form 16 Preparation',
         desc: 'Simplify quarterly TDS tax filing with automated challan reconciliation and effortless annual Form 16 creation.',
         items: ['Automated quarterly tax summaries', 'Match deductions with paid challans', 'Digital Form 16 distribution']
       },
@@ -753,7 +753,7 @@ export const productsData = {
     workflowSteps: [
       { step: 1, title: 'Lock Payroll', desc: 'Once your monthly salary processing is complete and approved, statutory deduction totals are finalized automatically.' },
       { step: 2, title: 'Validate Data', desc: 'Click once to run a pre-validation check that ensures all employee tax numbers and wage totals are formatted correctly.' },
-      { step: 3, title: 'Export Files', desc: 'Download pre-formatted PF ECR text files, ESIC returns, or Form 24Q packages ready for immediate portal submission.' },
+      { step: 3, title: 'Export Files', desc: 'Download pre-formatted PF ECR text files, ESIC returns, or Form 138Q packages ready for immediate portal submission.' },
       { step: 4, title: 'Archive Receipts', desc: 'Upload your paid government challans and acknowledgment numbers into the digital vault to complete your compliance record.' }
     ],
     faqs: [

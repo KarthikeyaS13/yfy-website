@@ -23,13 +23,13 @@ export default function HomePage() {
     <>
       <HeroSection />
       <PricingCards />
-      <TrustBar />
+      {/* <TrustBar /> */}
 
-      <ComplianceUSP />
-      <WhyYfy />
-      <FeaturesSnapshot />
-      <IntegrationsStrip />
-      <Testimonials />
+      {/* <ComplianceUSP /> */}
+      {/* <WhyYfy /> */}
+      {/* <FeaturesSnapshot /> */}
+      {/* <IntegrationsStrip /> */}
+      {/* <Testimonials /> */}
       <IsoCerts />
       <ROITeaser />
       <FinalCTA />

@@ -1,16 +1,16 @@
-# Graph Report - yfy30032026  (2026-08-25)
+# Graph Report - yfy-1  (2026-08-26)
 
 ## Corpus Check
-- 71 files · ~232,598 words
+- 79 files · ~236,893 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 225 nodes · 240 edges · 37 communities (23 shown, 14 thin omitted)
+- 251 nodes · 258 edges · 42 communities (24 shown, 18 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5895566f`
+- Built from commit: `31ceab6b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,39 +42,44 @@
 - workflows/graphify.md
 - eslint.config.mjs
 - next.config.mjs
+- case-studies/[slug]/page.js
+- community/page.js
+- about/page.js
+- security/page.js
+- terms/page.js
 
 ## God Nodes (most connected - your core abstractions)
 1. `getAllPosts()` - 7 edges
 2. `scripts` - 5 edges
 3. `The 4 Labour Codes at a Glance` - 5 edges
-4. `productsData` - 4 edges
-5. `getPostBySlug()` - 4 edges
+4. `getPostBySlug()` - 4 edges
+5. `productsData` - 4 edges
 6. `ROICalculator()` - 3 edges
-7. `formatINRCurrency()` - 3 edges
-8. `ROIPdfTemplate()` - 3 edges
-9. `Navbar()` - 3 edges
-10. `complianceMapData` - 3 edges
+7. `Navbar()` - 3 edges
+8. `caseStudiesData` - 3 edges
+9. `formatINRCurrency()` - 3 edges
+10. `The Hidden Costs of Manual Payroll` - 3 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `generateStaticParams()` --calls--> `getAllPosts()`  [EXTRACTED]
-  app/blog/[slug]/page.js → lib/markdown.js
-- `BlogPage()` --calls--> `getAllPosts()`  [EXTRACTED]
-  app/blog/page.js → lib/markdown.js
 - `sitemap()` --calls--> `getAllPosts()`  [EXTRACTED]
   app/sitemap.js → lib/markdown.js
-- `generateMetadata()` --calls--> `getPostBySlug()`  [EXTRACTED]
+- `BlogPage()` --calls--> `getAllPosts()`  [EXTRACTED]
+  app/blog/page.js → lib/markdown.js
+- `generateStaticParams()` --calls--> `getAllPosts()`  [EXTRACTED]
   app/blog/[slug]/page.js → lib/markdown.js
 - `BlogPost()` --calls--> `getPostBySlug()`  [EXTRACTED]
+  app/blog/[slug]/page.js → lib/markdown.js
+- `generateMetadata()` --calls--> `getPostBySlug()`  [EXTRACTED]
   app/blog/[slug]/page.js → lib/markdown.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (37 total, 14 thin omitted)
+## Communities (42 total, 18 thin omitted)
 
 ### Community 0 - "app/page.js"
-Cohesion: 0.11
-Nodes (14): metadata, features, FeaturesSnapshot(), FinalCTA(), HeroSection(), integrations, IntegrationsStrip(), certs (+6 more)
+Cohesion: 0.09
+Nodes (13): metadata, features, FinalCTA(), HeroSection(), integrations, certs, IsoCerts(), PricingCards() (+5 more)
 
 ### Community 1 - "partners/page.js"
 Cohesion: 0.13
@@ -85,8 +90,8 @@ Cohesion: 0.10
 Nodes (21): framer-motion, gray-matter, lucide-react, dependencies, framer-motion, gray-matter, html2canvas, jspdf (+13 more)
 
 ### Community 3 - "layout.js"
-Cohesion: 0.15
-Nodes (7): metadata, NewsletterForm(), TODO: wire up to your email marketing service, GlobalScripts(), Footer(), Navbar(), navLinks
+Cohesion: 0.14
+Nodes (5): metadata, TODO: wire up to your email marketing service, Footer(), Navbar(), navLinks
 
 ### Community 4 - "package.json"
 Cohesion: 0.14
@@ -97,7 +102,7 @@ Cohesion: 0.27
 Nodes (9): BlogPage(), metadata, BlogPost(), generateMetadata(), generateStaticParams(), sitemap(), contentDirectory, getAllPosts() (+1 more)
 
 ### Community 6 - "roi/page.js"
-Cohesion: 0.26
+Cohesion: 0.24
 Nodes (6): metadata, ROICalculator(), ROICalculatorWrapper(), formatINRCurrency(), ROIPdfTemplate(), ROIScrollButton()
 
 ### Community 7 - "products/[slug]/page.js"
@@ -124,23 +129,29 @@ Nodes (4): 1. Human Error & Compliance Penalties, 2. Resource Drain, Calculating
 Cohesion: 0.50
 Nodes (3): Deploy on Vercel, Getting Started, Learn More
 
+### Community 38 - "community/page.js"
+Cohesion: 0.40
+Nodes (3): features, metadata, stats
+
 ## Knowledge Gaps
-- **64 isolated node(s):** `DATA_FILE`, `metadata`, `metadata`, `metadata`, `metadata` (+59 more)
+- **72 isolated node(s):** `graphify`, `Workflow: graphify`, `metadata`, `metadata`, `metadata` (+67 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **What connects `DATA_FILE`, `metadata`, `metadata` to the rest of the system?**
-  _64 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **What connects `graphify`, `Workflow: graphify`, `metadata` to the rest of the system?**
+  _72 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `app/page.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.11 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08994708994708994 - nodes in this community are weakly interconnected._
 - **Should `partners/page.js` be split into smaller, more focused modules?**
   _Cohesion score 0.12857142857142856 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
+- **Should `layout.js` be split into smaller, more focused modules?**
+  _Cohesion score 0.13970588235294118 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._

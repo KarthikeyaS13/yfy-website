@@ -40,10 +40,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# SQLite Database
-*.db
-*.db-shm
-*.db-wal
+# database
+data/yfy.db*
 
-# zips
+# zip archives
 *.zip

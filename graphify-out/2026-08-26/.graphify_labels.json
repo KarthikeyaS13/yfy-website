@@ -35,5 +35,10 @@
   "33": "CLAUDE.md",
   "34": "html2canvas",
   "35": "jspdf",
-  "36": "next"
+  "36": "next",
+  "37": "case-studies/[slug]/page.js",
+  "38": "community/page.js",
+  "39": "about/page.js",
+  "40": "security/page.js",
+  "41": "terms/page.js"
 }

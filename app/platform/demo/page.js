@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Loader2 } from 'lucide-react';
 import styles from './Demo.module.css';
 
 const countries = [
@@ -33,12 +33,15 @@ export default function DemoPage() {
     lastName: '',
     workEmail: '',
     company: '',
-    employeeCount: ''
+    employeeCount: '',
+    primaryInterest: '',
+    messageDetails: ''
   });
 
   const [countryCode, setCountryCode] = useState("+91");
   const [phoneNumOnly, setPhoneNumOnly] = useState("");
   const [submitError, setSubmitError] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
 
   const showToast = (message, type = 'success') => {
@@ -53,11 +56,9 @@ export default function DemoPage() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [selectedSlot, setSelectedSlot] = useState('');
   const [availableSlots, setAvailableSlots] = useState([
-    "11:00 AM", "11:30 AM", "12:00 PM",
-    "12:30 PM", "01:00 PM", "02:00 PM",
-    "02:30 PM", "03:00 PM", "03:30 PM",
-    "04:00 PM", "04:30 PM", "05:00 PM",
-    "05:30 PM"
+    "11:00 AM", "12:00 PM", 
+    "02:00 PM", "03:00 PM", 
+    "04:00 PM", "05:00 PM"
   ]);
 
   const [existingBookings, setExistingBookings] = useState([]);
@@ -184,6 +185,8 @@ export default function DemoPage() {
       return;
     }
     
+    setIsSubmitting(true);
+    
     const payload = {
       ...formData,
       phone: `${countryCode} ${digits}`,
@@ -211,7 +214,9 @@ export default function DemoPage() {
         lastName: '',
         workEmail: '',
         company: '',
-        employeeCount: ''
+        employeeCount: '',
+        primaryInterest: '',
+        messageDetails: ''
       });
       setPhoneNumOnly("");
       setSelectedSlot('');
@@ -219,6 +224,8 @@ export default function DemoPage() {
     } catch (err) {
       console.error(err);
       setSubmitError("An error occurred while sending your request. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -233,7 +240,11 @@ export default function DemoPage() {
   const showScheduler = formData.firstName.trim() !== '' && 
                         formData.lastName.trim() !== '' && 
                         formData.workEmail.trim() !== '' && 
-                        phoneNumOnly.trim() !== '';
+                        phoneNumOnly.trim() !== '' &&
+                        formData.company.trim() !== '' &&
+                        formData.employeeCount.trim() !== '' &&
+                        formData.primaryInterest.trim() !== '' &&
+                        formData.messageDetails.trim() !== '';
 
   return (
     <div className={styles.demoPage}>
@@ -413,6 +424,32 @@ export default function DemoPage() {
                 </div>
               </div>
 
+              <div className={styles.fieldGroup}>
+                <label className={styles.label}>Primary Interest</label>
+                <input 
+                  required 
+                  type="text" 
+                  name="primaryInterest"
+                  className={styles.input} 
+                  placeholder="e.g. AI Automation, Agentic Consulting"
+                  value={formData.primaryInterest}
+                  onChange={handleInputChange}
+                />
+              </div>
+
+              <div className={styles.fieldGroup}>
+                <label className={styles.label}>Message Details</label>
+                <textarea 
+                  required 
+                  name="messageDetails"
+                  className={styles.input} 
+                  style={{ minHeight: '100px', paddingTop: '12px', resize: 'vertical' }}
+                  placeholder="Briefly describe your current infrastructure and operational goals..."
+                  value={formData.messageDetails}
+                  onChange={handleInputChange}
+                />
+              </div>
+
               {showScheduler && (
                 <div className={styles.scheduleSection}>
                   <div className={styles.scheduleHeader}>
@@ -489,8 +526,12 @@ export default function DemoPage() {
               )}
 
               <div className={styles.formFooter}>
-                <button type="submit" className={styles.submitBtn}>
-                  Schedule Demo <ArrowRight size={18} />
+                <button type="submit" className={styles.submitBtn} disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    <>Scheduling... <Loader2 className={styles.spinner} size={18} /></>
+                  ) : (
+                    <>Schedule Demo <ArrowRight size={18} /></>
+                  )}
                 </button>
                 <p className={styles.termsDoc}>
                   By submitting this form, you agree to our <a href="/legal/privacy" className={styles.termsLink}>Privacy Policy</a> and authorize yfy® to contact you.

@@ -27,7 +27,7 @@ const items = [
   {
     icon: <ClipboardList size={40} strokeWidth={1.5} />,
     title: 'Statutory Filings Automation',
-    desc: 'PF ECR, ESIC returns, TDS challans (Form 24Q), Professional Tax, filed on time, every time.',
+    desc: 'PF ECR, ESIC returns, TDS challans (Form 138Q), Professional Tax, filed on time, every time.',
     tag: 'Zero Penalties',
     tagColor: 'green',
   },

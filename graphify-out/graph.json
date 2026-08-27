@@ -237,11 +237,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "compliance/route.js",
+      "community_name": "db.js",
       "file_type": "code",
       "norm_label": "get()",
       "source_file": "app/api/compliance/route.js",
-      "source_location": "L7"
+      "source_location": "L4"
     },
     {
       "id": "app_api_compliance_route_post",
@@ -249,11 +249,71 @@
       "_callable": true,
       "_origin": "ast",
       "community": 13,
-      "community_name": "compliance/route.js",
+      "community_name": "db.js",
       "file_type": "code",
       "norm_label": "post()",
       "source_file": "app/api/compliance/route.js",
-      "source_location": "L19"
+      "source_location": "L27"
+    },
+    {
+      "id": "app_api_compliance_subscribe_route_post",
+      "label": "POST()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "db.js",
+      "file_type": "code",
+      "norm_label": "post()",
+      "source_file": "app/api/compliance/subscribe/route.js",
+      "source_location": "L4"
+    },
+    {
+      "id": "app_api_demo_route_get",
+      "label": "GET()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "db.js",
+      "file_type": "code",
+      "norm_label": "get()",
+      "source_file": "app/api/demo/route.js",
+      "source_location": "L5"
+    },
+    {
+      "id": "app_api_demo_route_post",
+      "label": "POST()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "db.js",
+      "file_type": "code",
+      "norm_label": "post()",
+      "source_file": "app/api/demo/route.js",
+      "source_location": "L23"
+    },
+    {
+      "id": "lib_db_initdb",
+      "label": "initDb()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "db.js",
+      "file_type": "code",
+      "norm_label": "initdb()",
+      "source_file": "lib/db.js",
+      "source_location": "L12"
+    },
+    {
+      "id": "scripts_seed_db_seed",
+      "label": "seed()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "db.js",
+      "file_type": "code",
+      "norm_label": "seed()",
+      "source_file": "scripts/seed-db.js",
+      "source_location": "L5"
     },
     {
       "id": "app_integrations_page_integrationspage",
@@ -361,7 +421,31 @@
       "file_type": "code",
       "norm_label": "demopage()",
       "source_file": "app/platform/demo/page.js",
-      "source_location": "L7"
+      "source_location": "L30"
+    },
+    {
+      "id": "app_platform_demo_page_demopage_fetchbookings",
+      "label": "fetchBookings()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "demo/page.js",
+      "file_type": "code",
+      "norm_label": "fetchbookings()",
+      "source_file": "app/platform/demo/page.js",
+      "source_location": "L66"
+    },
+    {
+      "id": "app_platform_demo_page_parsetimetominutes",
+      "label": "parseTimeToMinutes()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "demo/page.js",
+      "file_type": "code",
+      "norm_label": "parsetimetominutes()",
+      "source_file": "app/platform/demo/page.js",
+      "source_location": "L17"
     },
     {
       "id": "app_platform_page_platformoverviewpage",
@@ -1451,22 +1535,77 @@
       "label": "compliance/route.js",
       "_origin": "ast",
       "community": 13,
-      "community_name": "compliance/route.js",
+      "community_name": "db.js",
       "file_type": "code",
       "norm_label": "compliance/route.js",
       "source_file": "app/api/compliance/route.js",
       "source_location": "L1"
     },
     {
-      "id": "app_api_compliance_route_data_file",
-      "label": "DATA_FILE",
+      "id": "app_api_compliance_subscribe_route",
+      "label": "subscribe/route.js",
       "_origin": "ast",
       "community": 13,
-      "community_name": "compliance/route.js",
+      "community_name": "db.js",
       "file_type": "code",
-      "norm_label": "data_file",
-      "source_file": "app/api/compliance/route.js",
+      "norm_label": "subscribe/route.js",
+      "source_file": "app/api/compliance/subscribe/route.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_api_demo_route",
+      "label": "demo/route.js",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "db.js",
+      "file_type": "code",
+      "norm_label": "demo/route.js",
+      "source_file": "app/api/demo/route.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_db",
+      "label": "db.js",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "db.js",
+      "file_type": "code",
+      "norm_label": "db.js",
+      "source_file": "lib/db.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_db_db",
+      "label": "db",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "db.js",
+      "file_type": "code",
+      "norm_label": "db",
+      "source_file": "lib/db.js",
+      "source_location": "L8"
+    },
+    {
+      "id": "lib_db_dbpath",
+      "label": "dbPath",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "db.js",
+      "file_type": "code",
+      "norm_label": "dbpath",
+      "source_file": "lib/db.js",
       "source_location": "L5"
+    },
+    {
+      "id": "scripts_seed_db",
+      "label": "seed-db.js",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "db.js",
+      "file_type": "code",
+      "norm_label": "seed-db.js",
+      "source_file": "scripts/seed-db.js",
+      "source_location": "L1"
     },
     {
       "id": "readme",
@@ -1638,6 +1777,17 @@
       "source_location": "L11"
     },
     {
+      "id": "package_dependencies_better_sqlite3",
+      "label": "better-sqlite3",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "better-sqlite3",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
       "id": "package_dependencies_framer_motion",
       "label": "framer-motion",
       "_origin": "ast",
@@ -1646,7 +1796,7 @@
       "file_type": "code",
       "norm_label": "framer-motion",
       "source_file": "package.json",
-      "source_location": "L13"
+      "source_location": "L14"
     },
     {
       "id": "package_dependencies_gray_matter",
@@ -1657,7 +1807,7 @@
       "file_type": "code",
       "norm_label": "gray-matter",
       "source_file": "package.json",
-      "source_location": "L14"
+      "source_location": "L15"
     },
     {
       "id": "package_dependencies_html2canvas",
@@ -1668,7 +1818,7 @@
       "file_type": "code",
       "norm_label": "html2canvas",
       "source_file": "package.json",
-      "source_location": "L15"
+      "source_location": "L16"
     },
     {
       "id": "package_dependencies_jspdf",
@@ -1679,7 +1829,7 @@
       "file_type": "code",
       "norm_label": "jspdf",
       "source_file": "package.json",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "package_dependencies_lucide_react",
@@ -1690,7 +1840,7 @@
       "file_type": "code",
       "norm_label": "lucide-react",
       "source_file": "package.json",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
       "id": "package_dependencies_next",
@@ -1701,7 +1851,18 @@
       "file_type": "code",
       "norm_label": "next",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L19"
+    },
+    {
+      "id": "package_dependencies_nodemailer",
+      "label": "nodemailer",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "nodemailer",
+      "source_file": "package.json",
+      "source_location": "L20"
     },
     {
       "id": "package_dependencies_react",
@@ -1712,7 +1873,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L21"
     },
     {
       "id": "package_dependencies_react_dom",
@@ -1723,7 +1884,7 @@
       "file_type": "code",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L22"
     },
     {
       "id": "package_dependencies_react_markdown",
@@ -1734,7 +1895,7 @@
       "file_type": "code",
       "norm_label": "react-markdown",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L23"
     },
     {
       "id": "package_dependencies_svg_maps_india",
@@ -1748,6 +1909,17 @@
       "source_location": "L12"
     },
     {
+      "id": "better_sqlite3",
+      "label": "better-sqlite3",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "concept",
+      "norm_label": "better-sqlite3",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
       "id": "framer_motion",
       "label": "framer-motion",
       "_origin": "ast",
@@ -1756,7 +1928,7 @@
       "file_type": "concept",
       "norm_label": "framer-motion",
       "source_file": "package.json",
-      "source_location": "L13"
+      "source_location": "L14"
     },
     {
       "id": "gray_matter",
@@ -1767,7 +1939,29 @@
       "file_type": "concept",
       "norm_label": "gray-matter",
       "source_file": "package.json",
-      "source_location": "L14"
+      "source_location": "L15"
+    },
+    {
+      "id": "html2canvas",
+      "label": "html2canvas",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "concept",
+      "norm_label": "html2canvas",
+      "source_file": "package.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "jspdf",
+      "label": "jspdf",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "concept",
+      "norm_label": "jspdf",
+      "source_file": "package.json",
+      "source_location": "L17"
     },
     {
       "id": "lucide_react",
@@ -1778,32 +1972,10 @@
       "file_type": "concept",
       "norm_label": "lucide-react",
       "source_file": "package.json",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
-      "id": "package_json_html2canvas",
-      "label": "html2canvas",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "dependencies",
-      "file_type": "concept",
-      "norm_label": "html2canvas",
-      "source_file": "package.json",
-      "source_location": "L15"
-    },
-    {
-      "id": "package_json_jspdf",
-      "label": "jspdf",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "dependencies",
-      "file_type": "concept",
-      "norm_label": "jspdf",
-      "source_file": "package.json",
-      "source_location": "L16"
-    },
-    {
-      "id": "package_json_next",
+      "id": "next",
       "label": "next",
       "_origin": "ast",
       "community": 2,
@@ -1811,7 +1983,18 @@
       "file_type": "concept",
       "norm_label": "next",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L19"
+    },
+    {
+      "id": "nodemailer",
+      "label": "nodemailer",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "concept",
+      "norm_label": "nodemailer",
+      "source_file": "package.json",
+      "source_location": "L20"
     },
     {
       "id": "react",
@@ -1822,7 +2005,7 @@
       "file_type": "concept",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L21"
     },
     {
       "id": "react_dom",
@@ -1833,7 +2016,7 @@
       "file_type": "concept",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L22"
     },
     {
       "id": "react_markdown",
@@ -1844,7 +2027,7 @@
       "file_type": "concept",
       "norm_label": "react-markdown",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L23"
     },
     {
       "id": "svg_maps_india",
@@ -2024,6 +2207,17 @@
       "norm_label": "demo/page.js",
       "source_file": "app/platform/demo/page.js",
       "source_location": "L1"
+    },
+    {
+      "id": "app_platform_demo_page_countries",
+      "label": "countries",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "demo/page.js",
+      "file_type": "code",
+      "norm_label": "countries",
+      "source_file": "app/platform/demo/page.js",
+      "source_location": "L7"
     },
     {
       "id": "app_platform_page",
@@ -2214,39 +2408,6 @@
       "source_location": "L1"
     },
     {
-      "id": "html2canvas_html2canvas",
-      "label": "html2canvas",
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "html2canvas",
-      "confidence": "EXTRACTED",
-      "file_type": "code",
-      "norm_label": "html2canvas",
-      "source_file": "html2canvas"
-    },
-    {
-      "id": "jspdf_jspdf",
-      "label": "jspdf",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "jspdf",
-      "confidence": "EXTRACTED",
-      "file_type": "code",
-      "norm_label": "jspdf",
-      "source_file": "jspdf"
-    },
-    {
-      "id": "next_next",
-      "label": "next",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "next",
-      "confidence": "EXTRACTED",
-      "file_type": "code",
-      "norm_label": "next",
-      "source_file": "next"
-    },
-    {
       "id": "app_case_studies_page",
       "label": "case-studies/page.js",
       "_origin": "ast",
@@ -2387,7 +2548,7 @@
       "file_type": "code",
       "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L25"
     },
     {
       "id": "package_devdependencies_eslint",
@@ -2398,7 +2559,7 @@
       "file_type": "code",
       "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L26"
     },
     {
       "id": "package_devdependencies_eslint_config_next",
@@ -2409,7 +2570,7 @@
       "file_type": "code",
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L27"
     },
     {
       "id": "package_name",
@@ -2508,7 +2669,7 @@
       "file_type": "concept",
       "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L26"
     },
     {
       "id": "eslint_config_next",
@@ -2519,7 +2680,7 @@
       "file_type": "concept",
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L27"
     },
     {
       "id": "app_security_page",
@@ -2935,6 +3096,18 @@
       "weight": 1.0
     },
     {
+      "source": "app_platform_demo_page_demopage",
+      "target": "app_platform_demo_page_parsetimetominutes",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/platform/demo/page.js",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
       "source": "app_sitemap_sitemap",
       "target": "lib_markdown_getallposts",
       "relation": "calls",
@@ -2968,6 +3141,54 @@
       "context": "call",
       "source_file": "components/platform/ROIPdfTemplate.js",
       "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "app_platform_demo_page_demopage",
+      "target": "app_platform_demo_page_demopage_fetchbookings",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/platform/demo/page.js",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_compliance_route",
+      "target": "lib_db_db",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/compliance/route.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_compliance_subscribe_route",
+      "target": "lib_db_db",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/compliance/subscribe/route.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_demo_route",
+      "target": "lib_db_db",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/demo/route.js",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -3427,6 +3648,18 @@
       "weight": 1.0
     },
     {
+      "source": "package_dependencies_better_sqlite3",
+      "target": "better_sqlite3",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
       "source": "package_dependencies_framer_motion",
       "target": "framer_motion",
       "relation": "imports",
@@ -3435,7 +3668,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -3447,24 +3680,12 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "package_dependencies_html2canvas",
-      "target": "package_json_html2canvas",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0
     },
     {
-      "source": "package_dependencies_jspdf",
-      "target": "package_json_jspdf",
+      "source": "package_dependencies_html2canvas",
+      "target": "html2canvas",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3472,6 +3693,18 @@
       "context": "import",
       "source_file": "package.json",
       "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies_jspdf",
+      "target": "jspdf",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -3483,19 +3716,31 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
       "source": "package_dependencies_next",
-      "target": "package_json_next",
+      "target": "next",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies_nodemailer",
+      "target": "nodemailer",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -3507,7 +3752,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -3519,7 +3764,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -3531,7 +3776,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -3555,7 +3800,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -3567,7 +3812,55 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_seed_db",
+      "target": "lib_db_db",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/seed-db.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_compliance_route",
+      "target": "lib_db",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/compliance/route.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_compliance_subscribe_route",
+      "target": "lib_db",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/compliance/subscribe/route.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_demo_route",
+      "target": "lib_db",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/demo/route.js",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -4087,6 +4380,18 @@
       "weight": 1.0
     },
     {
+      "source": "scripts_seed_db",
+      "target": "lib_db",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/seed-db.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "agents",
       "target": "agents_this_is_not_the_next_js_you_know",
       "relation": "contains",
@@ -4160,18 +4465,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/api/compliance/route.js",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "app_api_compliance_route",
-      "target": "app_api_compliance_route_data_file",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/api/compliance/route.js",
-      "source_location": "L5",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -4182,7 +4476,40 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/api/compliance/route.js",
-      "source_location": "L7",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_compliance_subscribe_route",
+      "target": "app_api_compliance_subscribe_route_post",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/compliance/subscribe/route.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_demo_route",
+      "target": "app_api_demo_route_post",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/demo/route.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_demo_route",
+      "target": "app_api_demo_route_get",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/demo/route.js",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -4473,7 +4800,29 @@
     },
     {
       "source": "app_platform_demo_page",
+      "target": "app_platform_demo_page_parsetimetominutes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/platform/demo/page.js",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "app_platform_demo_page",
       "target": "app_platform_demo_page_demopage",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/platform/demo/page.js",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "app_platform_demo_page",
+      "target": "app_platform_demo_page_countries",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5495,6 +5844,39 @@
       "weight": 1.0
     },
     {
+      "source": "lib_db",
+      "target": "lib_db_initdb",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/db.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_db",
+      "target": "lib_db_dbpath",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/db.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_db",
+      "target": "lib_db_db",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/db.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
       "source": "lib_markdown",
       "target": "lib_markdown_getpostbyslug",
       "relation": "contains",
@@ -5568,7 +5950,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -5617,7 +5999,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_framer_motion",
+      "target": "package_dependencies_better_sqlite3",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5628,7 +6010,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_gray_matter",
+      "target": "package_dependencies_framer_motion",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5639,7 +6021,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_html2canvas",
+      "target": "package_dependencies_gray_matter",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5650,7 +6032,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_jspdf",
+      "target": "package_dependencies_html2canvas",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5661,7 +6043,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_lucide_react",
+      "target": "package_dependencies_jspdf",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5672,7 +6054,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_next",
+      "target": "package_dependencies_lucide_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5683,7 +6065,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
+      "target": "package_dependencies_next",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5694,7 +6076,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
+      "target": "package_dependencies_nodemailer",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5705,13 +6087,35 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_markdown",
+      "target": "package_dependencies_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_markdown",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -5722,7 +6126,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -5733,7 +6137,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -5814,6 +6218,17 @@
       "weight": 1.0
     },
     {
+      "source": "scripts_seed_db",
+      "target": "scripts_seed_db_seed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/seed-db.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "app_newsletterform_rationale_11",
       "target": "app_newsletterform",
       "relation": "rationale_for",
@@ -5826,5 +6241,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "31ceab6bf3cb0c7a478719a95b2e9fa5a51efb45"
+  "built_at_commit": "d45ebc1e4c6f203b269e5e672c625c7fcc42881f"
 }
