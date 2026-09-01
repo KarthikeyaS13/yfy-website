@@ -6,6 +6,19 @@ import { Menu, X, ChevronDown, Rocket, ShieldCheck, Users, BarChart3, Presentati
 
 const navLinks = [
   {
+    label: "Who it's for",
+    mega: true,
+    cols: [
+      {
+        title: '',
+        links: [
+          { label: 'Principal Employers', href: '/products/contract-labour', desc: 'Vendor compliance tracking', icon: <ShieldCheck size={18} /> },
+          { label: 'Staffing Agency', href: '/products/staffing', desc: 'Manpower supplier software', icon: <Users size={18} /> },
+        ]
+      }
+    ]
+  },
+  {
     label: 'Platform',
     mega: true,
     cols: [
@@ -49,13 +62,7 @@ const navLinks = [
           { label: 'Learning (LMS)', href: '/products/lms', desc: 'Skill growth & certifications', icon: <BookOpen size={18} /> },
         ],
       },
-      {
-        title: 'Workforce Operations',
-        links: [
-          { label: 'Staffing Agency', href: '/products/staffing', desc: 'Manpower supplier software', icon: <Users size={18} /> },
-          { label: 'Contract Labour', href: '/products/contract-labour', desc: 'Vendor compliance tracking', icon: <ShieldCheck size={18} /> },
-        ],
-      },
+
       {
         title: 'Compliance Intelligence',
         links: [
@@ -79,18 +86,8 @@ const navLinks = [
     ],
   },
   {
-    label: 'Solutions',
-    mega: true,
-    cols: [
-      {
-        title: 'By Role',
-        links: [
-          { label: 'For HR Leaders', href: '/solutions/hr-leaders', desc: 'Empower your workforce', icon: <Users size={18} /> },
-          { label: 'For Finance', href: '/solutions/finance', desc: 'Control costs & compliance', icon: <Coins size={18} /> },
-          { label: 'For IT', href: '/solutions/it', desc: 'Secure & scalable architecture', icon: <Lock size={18} /> },
-        ],
-      },
-    ],
+    label: 'Pricing',
+    href: '/pricing'
   },
   {
     label: 'Resources',
@@ -106,11 +103,7 @@ const navLinks = [
         ],
       },
     ],
-  },
-  {
-    label: 'Integrations',
-    href: '/integrations',
-  },
+  }
 ];
 
 function Clock({ size }) {
@@ -125,7 +118,7 @@ function MegaMenuContent({ cols }) {
       <div className="mega-grid">
         {cols.map((col) => (
           <div key={col.title} className="mega-col">
-            <div className="col-title">{col.title}</div>
+            {col.title && <div className="col-title">{col.title}</div>}
             {col.links.map((link) => (
               <Link key={link.label} href={link.href} className="nav-card">
                 <div className="nav-card-icon">{link.icon}</div>
@@ -496,7 +489,7 @@ export default function Navbar() {
           </div>
 
           <div className="nav-cta">
-            <Link href="/platform/demo" className="btn btn-outline btn-sm">Request Demo</Link>
+            <Link href="/exposure-report" className="btn btn-outline btn-sm">Get your exposure report</Link>
             
             <button 
               className="mobile-toggle" 
@@ -576,7 +569,7 @@ export default function Navbar() {
         ))}
         
         <div style={{ marginTop: 'auto', padding: '1.5rem 0', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          <Link href="/platform/demo" className="btn btn-outline" style={{width: '100%', textAlign: 'center'}} onClick={() => setIsMenuOpen(false)}>Book Demo</Link>
+          <Link href="/exposure-report" className="btn btn-outline" style={{width: '100%', textAlign: 'center'}} onClick={() => setIsMenuOpen(false)}>Get your exposure report</Link>
         </div>
       </div>
     </>

@@ -29,7 +29,7 @@ export default function ProductClientView({ product }) {
       <main className={styles.mainContent}>
         
         {/* Hero Section */}
-        <section className={`${styles.heroSection} reveal`}>
+        <section className={`${styles.heroSection} reveal`} suppressHydrationWarning>
           <div className={styles.categoryTag}>
             <Icons.Sparkles size={16} />
             <span>{product.category} • {product.badge}</span>
@@ -60,7 +60,7 @@ export default function ProductClientView({ product }) {
 
         {/* Why Choose / Benefits Section */}
         {product.architectureSection && (
-          <section className={`${styles.archSection} reveal`}>
+          <section className={`${styles.archSection} reveal`} suppressHydrationWarning>
             <div className={styles.archHeader}>
               <Icons.ShieldCheck size={24} className="text-gradient" />
               <span className={styles.archBadge}>Key Advantages & Business Benefits</span>
@@ -88,7 +88,7 @@ export default function ProductClientView({ product }) {
         )}
 
         {/* Key Features Grid */}
-        <section className={`${styles.featuresSection} reveal`}>
+        <section className={`${styles.featuresSection} reveal`} suppressHydrationWarning>
           <h2 className={styles.sectionTitle}>Built for Scale, Simplicity & Efficiency</h2>
           <p className={styles.sectionSubtitle}>
             Explore the smart tools and intuitive features designed to make daily workforce management effortless for your team.
@@ -120,7 +120,7 @@ export default function ProductClientView({ product }) {
 
         {/* Workflow Steps Section */}
         {product.workflowSteps && product.workflowSteps.length > 0 && (
-          <section className={`${styles.workflowSection} reveal`}>
+          <section className={`${styles.workflowSection} reveal`} suppressHydrationWarning>
             <h2 className={styles.sectionTitle}>How It Works in Practice</h2>
             <p className={styles.sectionSubtitle}>
               A simple, step-by-step workflow engineered to save you time and eliminate manual paperwork.
@@ -140,7 +140,7 @@ export default function ProductClientView({ product }) {
 
         {/* AEO / FAQs Section */}
         {product.faqs && product.faqs.length > 0 && (
-          <section className={`${styles.faqSection} reveal`}>
+          <section className={`${styles.faqSection} reveal`} suppressHydrationWarning>
             <h2 className={styles.sectionTitle}>Frequently Asked Questions</h2>
             <p className={styles.sectionSubtitle}>
               Clear answers to common questions about how {product.title} helps your business grow.
@@ -177,7 +177,7 @@ export default function ProductClientView({ product }) {
 
         {/* Related Products Section */}
         {relatedProductsList && relatedProductsList.length > 0 && (
-          <section className={`${styles.relatedSection} reveal`}>
+          <section className={`${styles.relatedSection} reveal`} suppressHydrationWarning>
             <h2 className={styles.sectionTitle}>Explore Related Modules</h2>
             <p className={styles.sectionSubtitle}>
               Discover how our connected workforce modules work together seamlessly across your organization.
@@ -200,7 +200,7 @@ export default function ProductClientView({ product }) {
         )}
 
         {/* CTA Banner */}
-        <section className={`${styles.ctaBanner} reveal`}>
+        <section className={`${styles.ctaBanner} reveal`} suppressHydrationWarning>
           <h2 className={styles.ctaTitle}>Ready to Transform Your Workplace Operations?</h2>
           <p className={styles.ctaDesc}>
             Join growing businesses across India that have switched from disconnected HR tools to yfy.ai's unified, easy-to-use workforce platform.
