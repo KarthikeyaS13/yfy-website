@@ -156,10 +156,93 @@
 
 .ctas {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 900px;
   animation: fadeInUp 0.7s ease 0.4s both;
+}
+
+.personaCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.personaCard {
+  background: rgba(14, 6, 28, 0.6);
+  border: 1px solid rgba(155, 61, 216, 0.3);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+
+.personaCard:hover {
+  border-color: rgba(192, 126, 240, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(107, 31, 162, 0.2);
+  background: rgba(26, 10, 46, 0.8);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #F0E8FF;
+  margin: 0;
+}
+
+.cardDesc {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #C07EF0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.cardSupport {
+  font-size: 0.95rem;
+  color: #B0A0CC;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.cardLink {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #22D3A0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.cardLink:hover {
+  color: #fff;
+  gap: 0.75rem;
+}
+
+.thirdLink {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #B0A0CC;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.thirdLink:hover {
+  color: #C07EF0;
 }
 
 .microTrust {

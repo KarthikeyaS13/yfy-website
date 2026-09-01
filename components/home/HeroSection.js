@@ -96,12 +96,6 @@ export default function HeroSection() {
       </div>
 
       <div className={`container ${styles.inner}`}>
-        {/* Badge */}
-        <div className={styles.badge}>
-          <span className={styles.badgeDot} />
-          India’s First Workforce Intelligent Operating System
-        </div>
-
         {/* Headline */}
         <h1 className={styles.headline} >
           The Compliance-First Workforce Platform for {' '}
@@ -110,24 +104,37 @@ export default function HeroSection() {
         </h1>
 
         <p className={styles.subheadline}>
-          Verify what your contractors actually paid before you release their bill. Compute your statutory liability, generate the government's own return files, and hold the evidence across every state you operate in.
+          Two lenses on the same statutory engine. If you engage contract labour, we verify what your contractors actually paid before you release their bill. If you supply manpower, we run roster to payroll to client invoice off one approved muster — and prove your compliance to the clients auditing you.
         </p>
 
-        {/* Compliance pills */}
-        <div className={styles.compliancePills}>
-          {['ATS', 'HRMS', 'Payroll', 'PMS', 'LMS', 'Workforce Intelligence', 'Statutory Compliance', 'Labour Codes 2020'].map((tag) => (
-            <span key={tag} className={styles.pill}>{tag}</span>
-          ))}
-        </div>
-
-        {/* CTA Buttons */}
+        {/* CTA Persona Cards */}
         <div className={styles.ctas}>
-          <a href="/platform/demo" className="btn btn-accent btn-lg glossy" id="hero-book-demo">
-            Get your free exposure report
-          </a>
-          <a href="/platform" className="btn btn-outline btn-lg" id="hero-enterprise">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><circle cx="12" cy="12" r="10" /><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" /></svg>
-            See how the statutory engine works
+          <div className={styles.personaCards}>
+            <div className={styles.personaCard}>
+              <h2 className={styles.cardTitle}>I engage contract labour</h2>
+              <p className={styles.cardDesc}>Manufacturing, infrastructure, multi-plant employers</p>
+              <p className={styles.cardSupport}>
+                Find out what your contractors are shorting — and what it exposes you to under CLRA §21, EPF §8A and ESI §40.
+              </p>
+              <a href="/exposure-report" className={styles.cardLink}>
+                Get your contractor exposure report →
+              </a>
+            </div>
+            
+            <div className={styles.personaCard}>
+              <h2 className={styles.cardTitle}>I supply manpower</h2>
+              <p className={styles.cardDesc}>Staffing, facility management, security, logistics</p>
+              <p className={styles.cardSupport}>
+                See what your clients will find when they audit you — before they do.
+              </p>
+              <a href="/compliance-proof-pack" className={styles.cardLink}>
+                Get your compliance proof pack →
+              </a>
+            </div>
+          </div>
+          
+          <a href="/solutions/multi-state-employers" className={styles.thirdLink}>
+            Neither — we just need multi-state payroll and statutory →
           </a>
         </div>
 

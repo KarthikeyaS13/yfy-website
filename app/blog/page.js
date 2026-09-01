@@ -15,14 +15,14 @@ export default function BlogPage() {
     <div className={styles.blogPage}>
       <div className="container-lg">
         
-        <div className={`${styles.hero} reveal`}>
+        <div className={`${styles.hero} reveal`} suppressHydrationWarning>
           <h1 className={styles.title}>Resources & Insights</h1>
           <p className={styles.subtitle}>
             Navigate the complexities of Indian labour laws, HR management, and payroll automation with our expert guides.
           </p>
         </div>
 
-        <div className={`${styles.blogGrid} reveal reveal-delay-2`}>
+        <div className={`${styles.blogGrid} reveal reveal-delay-2`} suppressHydrationWarning>
           {posts.map(post => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className={styles.blogCard}>
               {post.category && (

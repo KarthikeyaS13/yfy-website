@@ -1,8 +1,10 @@
 import './globals.css';
 import Script from 'next/script';
 import GlobalScripts from '../components/GlobalScripts';
+import AIChat from '@/components/AIChat';
 import Navbar from '@/components/ui/Navbar';
 import Footer from '@/components/ui/Footer';
+import TopProgressBar from '@/components/TopProgressBar';
 
 export const metadata = {
   metadataBase: new URL('https://yfy.ai'),
@@ -74,6 +76,8 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <GlobalScripts />
+        <AIChat />
+        <TopProgressBar />
       </body>
     </html>
   );
