@@ -7,29 +7,46 @@ export default function GlobalScripts() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // 1. Reveal Elements (runs on mount and route changes)
-    const reveals = document.querySelectorAll('.reveal:not(.visible)');
-    let observer;
+    // 1. Reveal Elements (runs on mount and watches for dynamically added elements)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    const observeElements = () => {
+      document.querySelectorAll('.reveal:not(.visible)').forEach((el) => {
+        observer.observe(el);
+      });
+    };
     
-    if (reveals.length) {
-      observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-      
-      reveals.forEach((el) => observer.observe(el));
-    }
+    // Initial observation
+    observeElements();
+
+    // Watch for DOM changes (fixes Next.js client-side navigation blank screens)
+    const mutationObserver = new MutationObserver((mutations) => {
+      let shouldObserve = false;
+      for (const mutation of mutations) {
+        if (mutation.addedNodes.length > 0) {
+          shouldObserve = true;
+          break;
+        }
+      }
+      if (shouldObserve) {
+        observeElements();
+      }
+    });
+
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
 
     return () => {
-      if (observer) {
-        observer.disconnect();
-      }
+      if (observer) observer.disconnect();
+      if (mutationObserver) mutationObserver.disconnect();
     };
-  }, [pathname]);
+  }, []);
 
   useEffect(() => {
     // 2. Navbar Scroll (runs once)
